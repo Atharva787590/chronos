@@ -49,51 +49,51 @@ const eraDataMap: Record<string, EraData> = {
     milestones: [
       {
         year: "753 BC",
-        event: "Founding of Rome",
-        desc: "Romulus and Remus found the city of Rome on the Palatine Hill. Rome begins as a modest pastoral settlement, gradually absorbing neighboring communities and formulating the core tribal foundations that eventually evolved into the Roman Kingdom.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Roman_Forum_from_Palatine.jpg/1280px-Roman_Forum_from_Palatine.jpg"
+        event: "Steampunk Foundation of Rome",
+        desc: "Romulus and Remus construct early brass clockwork defense relays on the Palatine Hill, initiating Rome's legendary steam-powered defense grid to guard the nascent borders.",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800"
       },
       {
         year: "509 BC",
-        event: "The Roman Republic",
-        desc: "The expulsion of the last king, Tarquin the Proud, initiates the Roman Republic. Rome replaces monarchy with a system of elected magistrates (consuls) and a representative Senate, formulating early constitutional laws and establishing Patrician and Plebeian governance structures.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Maccari-Cicero.jpg/1280px-Maccari-Cicero.jpg"
+        event: "Pneumatic Senate Assembly",
+        desc: "Tarquin the Proud is deposed, and the Senate instates a complex pneumatic message tube system across the Forum, allowing consuls to instantly cast brass-ballot votes.",
+        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800"
       },
       {
         year: "27 BC",
-        event: "Rise of the Roman Empire",
-        desc: "Augustus Caesar is declared Princeps (First Citizen) by the Senate, bringing an end to the civil wars that devoured the late Republic. This marks the formal establishment of the Roman Principate and the beginning of the two-century-long Pax Romana.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Statue-Augustus.jpg/800px-Statue-Augustus.jpg"
+        event: "Holographic Imperial Decree",
+        desc: "Augustus Caesar projects the first giant golden holographic state-directive from the Senate roof, initiating the Pax Romana security protocol.",
+        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800"
       },
       {
         year: "79 AD",
-        event: "Eruption of Mount Vesuvius",
-        desc: "Vesuvius erupts, completely burying the cities of Pompeii and Herculaneum in volcanic ash. This catastrophic event preserved a pristine snapshot of everyday Roman life, architecture, frescoes, and urban layouts for modern archaeological excavation.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pompeii_-_Osteria_della_via_di_Mercurio_%286029565261%29.jpg/1280px-Pompeii_-_Osteria_della_via_di_Mercurio_%286029565261%29.jpg"
+        event: "Thermal Energy Overload",
+        desc: "Mount Vesuvius undergoes a catastrophic thermal energy overload, burying Pompeii in volcanic dust and freezing its mechanical clockwork streets in time.",
+        image: "https://images.unsplash.com/photo-1529260830199-44580453794b?q=80&w=800"
       },
       {
         year: "80 AD",
-        event: "Colosseum Completed",
-        desc: "The Flavian Amphitheatre (Colosseum) is completed under Emperor Titus. Opening with 100 days of gladiatorial games and naval simulations, the giant concrete and stone structure represents the peak of Roman structural engineering and public entertainment.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg"
+        event: "Holographic Colosseum Battles",
+        desc: "The Colosseum is fitted with dynamic light-emitting water projection plates, hosting full-scale glowing naval battle simulations and gladiator defense testing.",
+        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800"
       },
       {
         year: "122 AD",
-        event: "Hadrian's Wall",
-        desc: "Construction begins on Hadrian's Wall in Britannia, spanning 73 miles. Intended to mark the peak northern border of the Roman Empire, it served as a defensive fortification, customs checkpoint, and a physical symbol of imperial limit and control.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Hadrian%27s_wall_at_Greenhead_Lough.jpg/1280px-Hadrian%27s_wall_at_Greenhead_Lough.jpg"
+        event: "Hadrian's Chrono-Fortress",
+        desc: "Construction begins on a 73-mile defensive wall in Britannia, fitted with signal towers and steam-powered signal horns to control the imperial frontier.",
+        image: "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?q=80&w=800"
       },
       {
         year: "313 AD",
-        event: "Edict of Milan",
-        desc: "Emperor Constantine and Licinius issue the Edict of Milan, legalizing Christianity across the empire. This historic proclamation ends state-sanctioned persecution of Christians and begins the religious transformation of the Mediterranean world.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Arch_of_Constantine_2014.jpg/1280px-Arch_of_Constantine_2014.jpg"
+        event: "Constantine's Solar Decree",
+        desc: "Constantine legalizes Christianity, transmitting the message across the empire via reflective brass solar mirrors (heliographs) for synchronized reception.",
+        image: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=800"
       },
       {
         year: "476 AD",
-        event: "Fall of the Western Empire",
-        desc: "The Germanic chieftain Odoacer deposes the young Emperor Romulus Augustulus in Ravenna. This event marks the traditional collapse of the Western Roman Empire and the transition of Western Europe into the Early Middle Ages.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Roman_Forum_from_Palatine.jpg/1280px-Roman_Forum_from_Palatine.jpg"
+        event: "De-Synchronization of Rome",
+        desc: "The central gear-clock of Ravenna is dismantled by Odoacer, causing the Western Empire to de-synchronize from the imperial network.",
+        image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=800"
       }
     ],
     achievements: [
@@ -184,75 +184,75 @@ const eraDataMap: Record<string, EraData> = {
     milestones: [
       {
         year: "2500 BC",
-        event: "Indus Valley Urban Planning",
-        desc: "Mohenjo-daro and Harappa emerge as sophisticated cities in the Indus basin. Featuring standardized baked-brick houses, gridded streets, large public granaries, and advanced underground drainage channels, it stands as the ancient world's finest demonstration of municipal planning.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mohenjodaro_Sindh.jpeg/1280px-Mohenjodaro_Sindh.jpeg"
+        event: "Pneumatic Sanitation Grid",
+        desc: "Mohenjo-daro installs pressurized copper pneumatic water filtration tubes, creating the ancient world's finest municipal sanitation grid.",
+        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800"
       },
       {
         year: "1500 BC",
-        event: "Composition of the Rigveda",
-        desc: "The earliest Sanskrit hymns of the Rigveda are composed in the Punjab region. Handed down orally through generations with phonetic precision, these texts contain foundational philosophical concepts of cosmological order (Rta), Vedic rituals, and early Indian metaphysics.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/RigvedaMS.jpg/1280px-RigvedaMS.jpg"
+        event: "Phonetic Vocal Calculators",
+        desc: "Sanskrit scholars program oral chants with mathematical syntax, serving as acoustic vocal data stores to preserve cosmological information.",
+        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800"
       },
       {
         year: "599 BC",
-        event: "Lord Mahavira & Jainism",
-        desc: "The birth of Vardhamana Mahavira, the 24th Tirthankara of Jainism. Mahavira consolidated Jain philosophy, placing supreme emphasis on Anekantavada (non-absolutism), Aparigraha (non-possession), and Ahimsa (complete non-violence) as the path to spiritual liberation.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gomateshwara_statue%2C_Shravanabelagola.jpg/800px-Gomateshwara_statue%2C_Shravanabelagola.jpg"
+        event: "Ahimsa Harmonic Protocol",
+        desc: "Mahavira codifies Jain philosophy, establishing the Ahimsa non-harming protocol to maintain biological harmony across all living organisms.",
+        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
       },
       {
         year: "563 BC",
-        event: "Gautama Buddha's Enlightenment",
-        desc: "Siddhartha Gautama attains enlightenment under the Bodhi Tree in Bodh Gaya, becoming the Buddha. He begins preaching the Dharma—the Four Noble Truths and the Eightfold Path—advocating for a Middle Way to overcome human suffering and attachment.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mahabodhi_temple.jpg/800px-Mahabodhi_temple.jpg"
+        event: "Mind-State Synchronization",
+        desc: "Gautama Buddha achieves full neural synchronization under the Bodhi Tree, mapping the Four Noble Truths to override human emotional suffering.",
+        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
       },
       {
         year: "322 BC",
-        event: "Maurya Empire Founded",
-        desc: "Chandragupta Maurya, guided by the master strategist Chanakya (Kautilya), deposes the Nanda dynasty in Patliputra. He unifies the fractured kingdoms of northern India, establishing a centralized state with comprehensive intelligence and economic administration.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sarnath_museum_2013.jpg/800px-Sarnath_museum_2013.jpg"
+        event: "Kautilya's Spy Network",
+        desc: "Chandragupta Maurya and Chanakya establish a highly organized spy intelligence network using coded letters and secret optical signaling.",
+        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800"
       },
       {
         year: "261 BC",
-        event: "Kalinga War & Edicts of Dhamma",
-        desc: "Emperor Ashoka conquers the kingdom of Kalinga. Overwhelmed by the carnage of 100,000 casualties, Ashoka renounces expansionist warfare, embraces Buddhism, and carves rock and pillar edicts promoting moral law, welfare, and religious tolerance.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ashoka%27s_Rock_Edict_in_Girnar%2C_Junagadh_Gujarat.jpg/1280px-Ashoka%27s_Rock_Edict_in_Girnar%2C_Junagadh_Gujarat.jpg"
+        event: "Dhamma Rock Transmitters",
+        desc: "Ashoka carves his moral code onto rock pillars across India, turning pillars into permanent communication hubs for ethical instruction.",
+        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
       },
       {
         year: "78 AD",
-        event: "Kushan Empire & Saka Era",
-        desc: "Kanishka I ascends the Kushan throne, initiating the Saka Era. Under his rule, the Kushan Empire becomes a center of transcontinental Silk Road trade, Gandharan Greco-Buddhist sculpture, and hosts the Fourth Buddhist Council in Kashmir.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Gandhara_Buddha_%28tnm%29.jpeg/800px-Gandhara_Buddha_%28tnm%29.jpeg"
+        event: "Silk Road Trading Hub",
+        desc: "Kanishka unifies the transcontinental Silk Road, establishing copper currency standards and trade control outposts.",
+        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800"
       },
       {
         year: "320 AD",
-        event: "Gupta Dynasty Foundation",
-        desc: "Chandragupta I ascends the throne, initiating the Gupta Empire. This period marked a spectacular renaissance of Sanskrit literature, classical music, metallurgy, and temple architecture, famously referred to as the Golden Age of India.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Iron_pillar_of_Chandragupta_II.jpg/800px-Iron_pillar_of_Chandragupta_II.jpg"
+        event: "Sanskrit Golden Codex",
+        desc: "Chandragupta I initiates the golden age of metallurgy, crafting the rust-free Delhi Iron Pillar as a metallurgical wonder.",
+        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
       },
       {
         year: "499 AD",
-        event: "Aryabhata's Aryabhatiya",
-        desc: "Aryabhata publishes his revolutionary astronomical treatise. In it, he formulates place-value arithmetic, introduces the concept of zero as a mathematical entity, calculates the value of Pi to four decimal places, and proves that the Earth rotates on its axis.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Jantar_Mantar_Jaipur_March_2016.jpg/1280px-Jantar_Mantar_Jaipur_March_2016.jpg"
+        event: "Zero-Origin Calculation Gear",
+        desc: "Aryabhata devises the gears-of-zero math system, proving the Earth's rotation and calculating planetary orbits with high precision.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
       },
       {
         year: "630 AD",
-        event: "Nalanda University Golden Peak",
-        desc: "The premier monastic university of Nalanda reaches its peak under King Harsha, hosting over 10,000 students and scholars. Travelers like Xuanzang document its vast libraries and rigorous debates on Buddhist philosophy, logic, and medicine.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Nalanda_university_ruins_01.jpg/1280px-Nalanda_university_ruins_01.jpg"
+        event: "Nalanda Central Library",
+        desc: "Nalanda reaches peak capacity, holding thousands of scrolls containing ancient treatises on logic, medicine, and mechanical calculations.",
+        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
       },
       {
         year: "757 AD",
-        event: "Kailash Monolithic Temple",
-        desc: "Rashtrakuta King Krishna I commissions the carving of the Kailash Temple at Ellora Caves. Carved from the top-down out of a single basalt mountain face, this engineering feat removed 200,000 tons of rock to create a massive monolithic temple.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/EloraKailasa.jpg/1280px-EloraKailasa.jpg"
+        event: "Monolithic Basalt Excavation",
+        desc: "Engineers carve the massive Kailash temple from the top-down out of a single basalt mountain, removing 200,000 tons of rock.",
+        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
       },
       {
         year: "1010 AD",
-        event: "Brihadisvara Granite Temple",
-        desc: "Rajaraja Chola I completes the Brihadisvara Temple in Tanjore. Constructed entirely of interlocking granite blocks without mortar, the temple features a massive 81-ton monolithic stone dome (Kumbam) lifted to the top of a 216-foot tower.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Brihadisvara_temple_Thanjavur_2014.jpg/1280px-Brihadisvara_temple_Thanjavur_2014.jpg"
+        event: "Granite Interlocking System",
+        desc: "Chola builders lift an 81-ton monolithic dome to the top of a 216-foot tower, using mortar-free interlocking granite blocks.",
+        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
       }
     ],
     achievements: [
@@ -343,51 +343,51 @@ const eraDataMap: Record<string, EraData> = {
     milestones: [
       {
         year: "1308 AD",
-        event: "Dante's Divine Comedy",
-        desc: "Dante Alighieri begins composing the Divine Comedy. Written in the Florentine vernacular rather than Latin, this literary masterpiece bridged medieval theological visions with early humanist exploration of individual morality.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dante_Alighieri_portrait.jpg/800px-Dante_Alighieri_portrait.jpg"
+        event: "Vernacular Thought Codex",
+        desc: "Dante codes the Divine Comedy in vernacular Italian, bypassing traditional Latin to democratize literature and human morality.",
+        image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=800"
       },
       {
         year: "1440 AD",
-        event: "Gutenberg Printing Press",
-        desc: "Johannes Gutenberg invents the movable type printing press in Mainz. By enabling rapid reproduction of texts, it democratizes literacy, accelerates scientific exchange, and fuels the Protestant Reformation.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/1280px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
+        event: "Steam-Press Movable Type",
+        desc: "Gutenberg builds a high-pressure mechanical type-press, accelerating book production and democratizing knowledge distribution.",
+        image: "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?q=80&w=800"
       },
       {
         year: "1492 AD",
-        event: "Da Vinci's Flight Sketches",
-        desc: "Leonardo da Vinci fills his notebooks with conceptual designs for human flight, including the ornithopter and the aerial screw. These studies demonstrate his empirical approach, merging artistic geometry with physical mechanics.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruvian_Man_Luc_Viatour.jpg/800px-Da_Vinci_Vitruvian_Man_Luc_Viatour.jpg"
+        event: "Steam Flight Sketches",
+        desc: "Leonardo da Vinci drafts mechanical blueprints for human flight, including gear systems for the ornithopter and aerial screw.",
+        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800"
       },
       {
         year: "1504 AD",
-        event: "Michelangelo's David",
-        desc: "Michelangelo Buonarroti unveils his colossal marble sculpture of David in Florence. Carved from a single discarded block of marble, the statue represents a peak of anatomical realism, emotional intensity, and republican civic pride.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/%27David%27_by_Michelangelo_Fir_JBU002.jpg/800px-%27David%27_by_Michelangelo_Fir_JBU002.jpg"
+        event: "Anatomical Marble Precision",
+        desc: "Michelangelo chisels David with near-perfect biological accuracy, demonstrating the renaissance mastery of human geometry.",
+        image: "https://images.unsplash.com/photo-1614701167693-85ae30ff3c4d?q=80&w=800"
       },
       {
         year: "1508 AD",
-        event: "Sistine Chapel Ceiling",
-        desc: "Michelangelo begins painting the ceiling of the Sistine Chapel under Pope Julius II. Over four grueling years, he created a vast fresco system depicting Genesis, redefining Western painting with dynamic anatomy and monumental scale.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sistine_Chapel_ceiling_photo_2.jpg/1280px-Sistine_Chapel_ceiling_photo_2.jpg"
+        event: "Ceiling Fresco Matrix",
+        desc: "Michelangelo paints the Sistine Chapel ceiling, creating a massive visual grid of Genesis using complex geometric perspectives.",
+        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800"
       },
       {
         year: "1543 AD",
-        event: "Copernican Heliocentrism",
-        desc: "Nicolaus Copernicus publishes De revolutionibus orbium coelestium. He mathematically demonstrates that the Earth and planets orbit around the Sun, challenging the Ptolemaic geocentric model that dominated medieval cosmology.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Portrait_of_Nicolaus_Copernicus.jpg/800px-Portrait_of_Nicolaus_Copernicus.jpg"
+        event: "Heliocentric Orbit Model",
+        desc: "Copernicus publishes his mathematical calculations placing the Sun at the center of the solar system, replacing geocentrism.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
       },
       {
         year: "1597 AD",
-        event: "Shakespeare's Globe Theatre",
-        desc: "The Lord Chamberlain's Men establish the Globe Theatre in London. William Shakespeare's plays redefine vernacular English literature, exploring complex psychological profiles, political power, and human nature.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiddleTempleHall.jpg/1280px-MiddleTempleHall.jpg"
+        event: "Acoustic Globe Theatre",
+        desc: "The Globe Theatre is constructed with wooden acoustic rings, maximizing sound projection for Shakespeare's deep human dramas.",
+        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800"
       },
       {
         year: "1610 AD",
-        event: "Galileo's Telescope",
-        desc: "Galileo Galilei publishes Sidereus Nuncius, detailing his astronomical observations. Spotting the moons of Jupiter, sunspots, and lunar craters, he provides the first empirical evidence supporting Copernican heliocentrism.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Galileo.arp.300pix.jpg/800px-Galileo.arp.300pix.jpg"
+        event: "Optic Focal Lens Observer",
+        desc: "Galileo develops a double-lens optic spyglass, recording Jupiter's moons and providing empirical proof of heliocentrism.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
       }
     ],
     achievements: [
@@ -478,39 +478,39 @@ const eraDataMap: Record<string, EraData> = {
     milestones: [
       {
         year: "3100 BC",
-        event: "Unification of Upper & Lower Egypt",
-        desc: "King Narmer unifies the kingdoms of Upper and Lower Egypt under the first dynasty, establishing the double crown of the pharaohs and founding the early dynastic capital at Memphis.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/NarmerPalette_ROM_Replica.jpg/800px-NarmerPalette_ROM_Replica.jpg"
+        event: "Dynastic Border Merger",
+        desc: "King Narmer unifies Upper and Lower Egypt under a single administrative grid, symbolized by the double-crown crown protocol.",
+        image: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=800"
       },
       {
         year: "2560 BC",
-        event: "Completion of the Great Pyramid",
-        desc: "The Great Pyramid of Giza is completed as a monumental tomb for Pharaoh Khufu. Composed of 2.3 million limestone and granite blocks, it stood as the tallest man-made structure for over 3,800 years.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids_2.jpg/1280px-All_Gizah_Pyramids_2.jpg"
+        event: "Solar Pyramid Accumulator",
+        desc: "Pharaoh Khufu commissions the Great Pyramid of Giza, clad in white limestone to act as a colossal solar-focusing heat energy accumulator.",
+        image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800"
       },
       {
         year: "1478 BC",
-        event: "Reign of Queen Hatshepsut",
-        desc: "One of Egypt's most successful female pharaohs ascends the throne. Hatshepsut establishes lucrative trade networks to the Land of Punt, imports exotic trees, and commissions the stunning mortuary temple at Djeser-Djeseru.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hatshepsut_seated_met_29.3.2.jpg/800px-Hatshepsut_seated_met_29.3.2.jpg"
+        event: "Punt Expedition Fleet",
+        desc: "Hatshepsut launches a massive fleet of deep-sea cargo ships to Punt, returning with gold, ivory, and live incense trees.",
+        image: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800"
       },
       {
         year: "1332 BC",
-        event: "Ascension of Tutankhamun",
-        desc: "The boy king Tutankhamun ascends the throne, restoring the traditional Amun priesthood and shifting the capital back to Thebes. His virtually intact tomb remains the most famous archaeological discovery in history.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tutanchamun_Maske.jpg/800px-Tutanchamun_Maske.jpg"
+        event: "Thebes Coordinate Reset",
+        desc: "Tutankhamun resets the imperial capital back to Thebes, restoring traditional temple priesthood operations and structural grids.",
+        image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800"
       },
       {
         year: "1274 BC",
-        event: "Battle of Kadesh & Peace Treaty",
-        desc: "Pharaoh Ramses II fights the Hittites in the chariot battle of Kadesh. The conflict leads to the world's first recorded international peace treaty, carved in both Egyptian hieroglyphs and Hittite cuneiform.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Abu_Simbel%2C_Temple_of_Ramesses_II%2C_front%2C_Egypt%2C_Oct_2004.jpg/1280px-Abu_Simbel%2C_Temple_of_Ramesses_II%2C_front%2C_Egypt%2C_Oct_2004.jpg"
+        event: "The Kadesh Chronometer",
+        desc: "Ramses II fights the Hittites in a massive chariot battle, leading to the world's first recorded international peace treaty, sealed inside a mechanical brass coordinate-box.",
+        image: "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=800"
       },
       {
         year: "30 BC",
-        event: "Reign of Cleopatra & Roman Conquest",
-        desc: "Following the death of Cleopatra VII, the Ptolemaic dynasty ends, marking the formal annexation of Egypt by the Roman Empire, ending three millennia of independent Egyptian pharaonic rule.",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cleopatra_VII_Altes_Museum_Berlin.jpg/800px-Cleopatra_VII_Altes_Museum_Berlin.jpg"
+        event: "Imperial Network Annexation",
+        desc: "Cleopatra VII's reign concludes, and Egypt's agricultural breadbasket grid is annexed as a central province of the Roman Empire.",
+        image: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800"
       }
     ],
     achievements: [
