@@ -144,52 +144,62 @@ function ArtifactModel({ type }: ArtifactProps) {
   if (type === "core") {
     return (
       <group ref={groupRef} onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)}>
-        {/* Inner Glowing Crystal */}
-        <mesh>
-          <dodecahedronGeometry args={[0.5]} />
+        {/* 1. Loop of the Ankh (Top) */}
+        <mesh position={[0, 0.5, 0]} rotation={[0, 0, 0]}>
+          <torusGeometry args={[0.4, 0.06, 16, 64]} />
+          <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.15} />
+        </mesh>
+
+        {/* 2. Crossbar of the Ankh (Middle) */}
+        <mesh position={[0, 0.08, 0]}>
+          <boxGeometry args={[0.8, 0.08, 0.08]} />
+          <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.15} />
+        </mesh>
+
+        {/* Decorative gold rings on the crossbar sides */}
+        <mesh position={[-0.4, 0.08, 0]} rotation={[0, Math.PI / 2, 0]}>
+          <torusGeometry args={[0.05, 0.02, 8, 32]} />
+          <meshStandardMaterial color="#B3922E" metalness={0.95} roughness={0.1} />
+        </mesh>
+        <mesh position={[0.4, 0.08, 0]} rotation={[0, Math.PI / 2, 0]}>
+          <torusGeometry args={[0.05, 0.02, 8, 32]} />
+          <meshStandardMaterial color="#B3922E" metalness={0.95} roughness={0.1} />
+        </mesh>
+
+        {/* 3. Staff of the Ankh (Bottom) */}
+        <mesh position={[0, -0.4, 0]} rotation={[0, 0, 0]}>
+          <cylinderGeometry args={[0.05, 0.04, 0.8, 32]} />
+          <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.15} />
+        </mesh>
+
+        {/* Decorative rings on the bottom staff */}
+        <mesh position={[0, -0.78, 0]} rotation={[Math.PI / 2, 0, 0]}>
+          <cylinderGeometry args={[0.06, 0.06, 0.04, 16]} />
+          <meshStandardMaterial color="#B3922E" metalness={0.9} roughness={0.2} />
+        </mesh>
+
+        {/* 4. Central Lapis Lazuli Gemstone (Intersection) */}
+        <mesh position={[0, 0.08, 0.06]}>
+          <sphereGeometry args={[0.1, 16, 16]} />
           <meshStandardMaterial
-            color="#22d3ee"
-            emissive="#0891b2"
-            emissiveIntensity={1.8}
+            color="#1e3a8a"
+            emissive="#0f172a"
+            emissiveIntensity={0.5}
             roughness={0.05}
             metalness={0.9}
           />
         </mesh>
 
-        {/* Inner Wireframe overlay for technical look */}
-        <mesh scale={[1.02, 1.02, 1.02]}>
-          <dodecahedronGeometry args={[0.5]} />
-          <meshBasicMaterial color="#ffffff" wireframe transparent opacity={0.6} />
-        </mesh>
-
-        {/* Surrounding cage ring (vertical) */}
-        <mesh>
-          <torusGeometry args={[0.9, 0.04, 16, 100]} />
-          <meshStandardMaterial color="#1e293b" metalness={0.9} roughness={0.1} />
-        </mesh>
-
-        {/* Surrounding cage ring (horizontal) */}
-        <mesh rotation={[Math.PI / 2, 0, 0]}>
-          <torusGeometry args={[0.92, 0.03, 16, 100]} />
-          <meshStandardMaterial color="#D4AF37" metalness={0.9} roughness={0.1} />
-        </mesh>
-
-        {/* Floating orbit modules (small boxes) */}
-        {[...Array(4)].map((_, i) => {
-          const angle = (i * Math.PI * 2) / 4;
-          const r = 1.1;
+        {/* Halo of golden particles around the sacred Ankh */}
+        {[...Array(6)].map((_, i) => {
+          const angle = (i * Math.PI * 2) / 6;
+          const r = 0.55;
           const x = Math.cos(angle) * r;
-          const z = Math.sin(angle) * r;
+          const y = Math.sin(angle) * r + 0.5;
           return (
-            <mesh key={i} position={[x, 0, z]}>
-              <boxGeometry args={[0.1, 0.1, 0.1]} />
-              <meshStandardMaterial
-                color="#06b6d4"
-                emissive="#0891b2"
-                emissiveIntensity={1}
-                metalness={0.9}
-                roughness={0.1}
-              />
+            <mesh key={i} position={[x, y, 0]}>
+              <sphereGeometry args={[0.02, 8, 8]} />
+              <meshBasicMaterial color="#D4AF37" transparent opacity={0.7} />
             </mesh>
           );
         })}

@@ -39,8 +39,8 @@ const guideDatabase: GuideQARecord[] = [
     response: "The **Renaissance** era features 4 figures:\n- **Leonardo da Vinci**: Universal Polymath\n- **Galileo Galilei**: Father of Astronomy\n- **Michelangelo**: Master Sculptor & Painter\n- **Nicolaus Copernicus**: Heliocentric Astronomer\n\nThe representative relic is **The Galileo Astrolabe** (1598 AD)."
   },
   {
-    keywords: ["cyberpunk", "aeon", "jax", "neon", "future", "vance", "valerie"],
-    response: "The **Cyberpunk Future** era features 4 figures:\n- **A.E.O.N.**: Rogue Superintelligence\n- **Jax**: Subgrid Rebel netrunner\n- **Dr. Evelyn Vance**: Cyber-genetics pioneer\n- **Valerie Vance**: Corporate cybersecurity director\n\nThe representative relic is **The Chrono-Core** (2099 AD)."
+    keywords: ["egypt", "pyramid", "pharaoh", "ramses", "cleopatra", "ankh", "horus", "tutankhamun", "hatshepsut"],
+    response: "The **Ancient Egypt** era features 4 figures:\n- **Ramses II**: The Great Builder Pharaoh\n- **Cleopatra VII**: Intellectual Queen & Diplomat\n- **Queen Hatshepsut**: Prolific Female Pharaoh\n- **Imhotep**: Sage Architect & Father of Medicine\n\nThe representative relic is **The Golden Ankh of Ra** (1274 BC)."
   },
   {
     keywords: ["signin", "sign in", "login", "register", "auth", "account"],
@@ -91,7 +91,7 @@ export default function ChronoGuide() {
           ...prev,
           {
             sender: "Guide",
-            text: "My temporal archives are strictly calibrated to the historical records of Rome, India, the Renaissance, and Cyberpunk. I cannot extrapolate beyond these coordinates. Ask me about our eras, figures, 3D relics, or how to navigate the app!"
+            text: "My temporal archives are strictly calibrated to the historical records of Rome, India, the Renaissance, and Ancient Egypt. I cannot extrapolate beyond these coordinates. Ask me about our eras, figures, 3D relics, or how to navigate the app!"
           }
         ]);
       }

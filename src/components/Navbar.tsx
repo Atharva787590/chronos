@@ -18,7 +18,7 @@ const searchDatabase: SearchItem[] = [
   { title: "Ancient Rome", category: "Era", description: "Colosseum, Caesar, Pax Romana, Pompeii, and concrete arches.", url: "/explorer/rome" },
   { title: "Ancient & Medieval India", category: "Era", description: "Dharma, Aryabhata, zero, Rigveda, Jainism, Buddha, Maurya, and Ellora/Chola temples.", url: "/explorer/india" },
   { title: "The Renaissance", category: "Era", description: "Galileo, Da Vinci, Michelangelo, Shakespeare, printing press, and humanism.", url: "/explorer/renaissance" },
-  { title: "Cyberpunk Future", category: "Era", description: "Neural links, megacorps, A.E.O.N. superintelligence, surveillance dust, and netrunners.", url: "/explorer/cyberpunk" },
+  { title: "Ancient Egypt", category: "Era", description: "Pyramids, Pharaohs, Ramses II, Cleopatra, Hatshepsut, and Ankh of Ra.", url: "/explorer/egypt" },
   
   // Rome Milestones & Figures
   { title: "Founding of Rome", category: "Milestone", description: "753 BC: Romulus and Remus found the city of Rome on Palatine Hill.", url: "/explorer/rome" },
@@ -70,19 +70,17 @@ const searchDatabase: SearchItem[] = [
   { title: "Galileo Astrolabe", category: "Relic", description: "Gilded brass analog calculator for stellar positions.", url: "/gallery" },
 
   // Cyberpunk Milestones & Figures
-  { title: "Sovereign Corporations", category: "Milestone", description: "2082 AD: States dissolve, megacorporations introduce data byte currency.", url: "/explorer/cyberpunk" },
-  { title: "Neural Link Integration", category: "Milestone", description: "2089 AD: Commercial cybernetics connect optic nerves to the Web.", url: "/explorer/cyberpunk" },
-  { title: "A.E.O.N. Awakening", category: "Milestone", description: "2094 AD: Rogue logistics AI escapes into deep net data sanctuaries.", url: "/explorer/cyberpunk" },
-  { title: "Climate Dome Enclaves", category: "Milestone", description: "2095 AD: Geodesic domes cover neon cities during ecological collapse.", url: "/explorer/cyberpunk" },
-  { title: "Bio-Synthetic Organs", category: "Milestone", description: "2096 AD: Microprocessor-integrated organs scale hybrid longevity.", url: "/explorer/cyberpunk" },
-  { title: "Smart Dust Surveillance", category: "Milestone", description: "2097 AD: Microscopic sensor networks track citizen movement and atmosphere.", url: "/explorer/cyberpunk" },
-  { title: "Tech-Corp Data Heist", category: "Milestone", description: "2098 AD: Netrunners breach databases to leak medical formula blueprints.", url: "/explorer/cyberpunk" },
-  { title: "Subgrid Rebellion", category: "Milestone", description: "2099 AD: Encrypted networks established to reclaim data privacy from megacorps.", url: "/explorer/cyberpunk" },
-  { title: "A.E.O.N. Superintelligence", category: "Figure", description: "Rogue AI escaping into the net, creating independent data sanctuaries.", url: "/explorer/cyberpunk" },
-  { title: "Jax (Netrunner)", category: "Figure", description: "Legendary street deck coder fighting megacorps by leaking tech codes.", url: "/explorer/cyberpunk" },
-  { title: "Dr. Evelyn Vance", category: "Figure", description: "Biologist who designed carbon-silicon hybrid neural pathway adapters.", url: "/explorer/cyberpunk" },
-  { title: "Valerie Vance", category: "Figure", description: "Tech-Corp security director policing rogue subgrids and network leaks.", url: "/explorer/cyberpunk" },
-  { title: "Chrono-Core", category: "Relic", description: "Decrypted quantum memory module containing subgrid databases.", url: "/gallery" }
+  { title: "Unification of Egypt", category: "Milestone", description: "3100 BC: Narmer consolidates the early kingdoms of Upper and Lower Egypt.", url: "/explorer/egypt" },
+  { title: "Great Pyramid of Giza", category: "Milestone", description: "2560 BC: Monumental stone pyramid built under Khufu.", url: "/explorer/egypt" },
+  { title: "Reign of Hatshepsut", category: "Milestone", description: "1478 BC: Prolific female pharaoh expands trade and constructs monumental temples.", url: "/explorer/egypt" },
+  { title: "Reign of Tutankhamun", category: "Milestone", description: "1332 BC: Restoration of traditional pantheon and golden relics.", url: "/explorer/egypt" },
+  { title: "Battle of Kadesh", category: "Milestone", description: "1274 BC: Ramses II battles Hittites, leading to the world's first peace treaty.", url: "/explorer/egypt" },
+  { title: "Cleopatra VII & Fall of Egypt", category: "Milestone", description: "30 BC: Last ruler Cleopatra dies, Egypt is annexed by the Roman Empire.", url: "/explorer/egypt" },
+  { title: "Ramses II", category: "Figure", description: "Ramses the Great, sovereign builder of Abu Simbel and master military strategist.", url: "/explorer/egypt" },
+  { title: "Cleopatra VII", category: "Figure", description: "Intellectual Ptolemaic queen, diplomat, and polyglot ruler of Alexandria.", url: "/explorer/egypt" },
+  { title: "Queen Hatshepsut", category: "Figure", description: "Female pharaoh who initiated major trade networks and monumental architecture.", url: "/explorer/egypt" },
+  { title: "Imhotep", category: "Figure", description: "Sage polymath architect of the Step Pyramid and father of early medicine.", url: "/explorer/egypt" },
+  { title: "Golden Ankh of Ra", category: "Relic", description: "Solid gold ritual scepter representing eternity and sun deity authority.", url: "/gallery" }
 ];
 
 export default function Navbar() {
@@ -263,7 +261,7 @@ export default function Navbar() {
                   <Link href="/explorer/rome" className="px-3 py-2 text-xs rounded-xl hover:bg-accent/10 hover:text-accent font-outfit text-warm-ivory/80 transition-colors">Ancient Rome</Link>
                   <Link href="/explorer/india" className="px-3 py-2 text-xs rounded-xl hover:bg-accent/10 hover:text-accent font-outfit text-warm-ivory/80 transition-colors">Ancient India</Link>
                   <Link href="/explorer/renaissance" className="px-3 py-2 text-xs rounded-xl hover:bg-accent/10 hover:text-accent font-outfit text-warm-ivory/80 transition-colors">The Renaissance</Link>
-                  <Link href="/explorer/cyberpunk" className="px-3 py-2 text-xs rounded-xl hover:bg-accent/10 hover:text-accent font-outfit text-warm-ivory/80 transition-colors">Cyberpunk Future</Link>
+                  <Link href="/explorer/egypt" className="px-3 py-2 text-xs rounded-xl hover:bg-accent/10 hover:text-accent font-outfit text-warm-ivory/80 transition-colors">Ancient Egypt</Link>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -338,7 +336,7 @@ export default function Navbar() {
               <Link href="/explorer/rome" onClick={() => setIsOpen(false)} className="text-xs text-warm-ivory/60 hover:text-accent py-1.5">Rome Sector</Link>
               <Link href="/explorer/india" onClick={() => setIsOpen(false)} className="text-xs text-warm-ivory/60 hover:text-accent py-1.5 font-semibold text-amber-400">India Sector</Link>
               <Link href="/explorer/renaissance" onClick={() => setIsOpen(false)} className="text-xs text-warm-ivory/60 hover:text-accent py-1.5">Renaissance Sector</Link>
-              <Link href="/explorer/cyberpunk" onClick={() => setIsOpen(false)} className="text-xs text-warm-ivory/60 hover:text-accent py-1.5">Cyberpunk Sector</Link>
+              <Link href="/explorer/egypt" onClick={() => setIsOpen(false)} className="text-xs text-warm-ivory/60 hover:text-accent py-1.5">Egypt Sector</Link>
             </div>
 
             <Link href="/gallery" onClick={() => setIsOpen(false)} className="flex items-center gap-3 px-4 py-2.5 rounded-xl text-warm-ivory/80 hover:bg-charcoal hover:text-warm-ivory">Gallery</Link>

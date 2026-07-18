@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Chronos: Interactive Spatial History Experience",
   description: "A premium 3D web experience exploring history through immersive space and time timelines.",
-  keywords: ["history", "sundial", "hourglass", "3d history", "ancient rome", "renaissance", "cyberpunk future"],
+  keywords: ["history", "sundial", "hourglass", "3d history", "ancient rome", "renaissance", "ancient egypt"],
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
       </head>
       <body className="min-h-full flex flex-col bg-charcoal text-warm-ivory selection:bg-accent selection:text-charcoal-dark overflow-x-hidden">
         <AuthProvider>
@@ -42,7 +42,7 @@ export default function RootLayout({
               <div className="text-center md:text-left">
                 <span className="font-playfair font-bold text-lg tracking-wider text-accent">CHRONOS</span>
                 <p className="font-outfit text-sm text-warm-ivory/50 mt-1 max-w-md">
-                  An interactive spatial history experience charting human advancement across ancient realms and cyberpunk tomorrows.
+                  An interactive spatial history experience charting human advancement across ancient realms and classical dynasties.
                 </p>
               </div>
               <div className="flex gap-8 text-sm font-outfit">

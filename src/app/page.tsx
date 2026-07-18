@@ -69,14 +69,14 @@ export default function LandingPage() {
       accentText: "text-accent",
     },
     {
-      id: "cyberpunk",
-      name: "Cyberpunk Future",
-      period: "2099 & Beyond",
-      icon: Cpu,
-      description: "Fast-forward into neon shadowscapes, cybernetic augmentation, and artificial sentience networks.",
-      color: "border-cyan-800/40 hover:border-cyan-700/60 shadow-cyan-950/20",
-      accentBg: "bg-cyan-800/10",
-      accentText: "text-cyan-400",
+      id: "egypt",
+      name: "Ancient Egypt",
+      period: "3100 BC - 30 BC",
+      icon: Landmark,
+      description: "Traverse the sands of time to explore towering pyramids, sacred hieroglyphs, and powerful pharaohs.",
+      color: "border-amber-800/40 hover:border-amber-700/60 shadow-amber-950/20",
+      accentBg: "bg-amber-800/10",
+      accentText: "text-amber-500",
     },
   ];
 

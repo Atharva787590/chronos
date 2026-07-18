@@ -105,26 +105,26 @@ const relics: RelicItem[] = [
   },
   {
     id: "core",
-    name: "The Chrono-Core",
-    era: "Cyberpunk Future",
-    year: "2099 AD",
-    icon: Cpu,
+    name: "The Golden Ankh of Ra",
+    era: "Ancient Egypt",
+    year: "1274 BC",
+    icon: Landmark,
     canvasType: "core",
-    description: "A decrypted memory core extracted from the central vault of the A.E.O.N. superintelligence network. Contains encrypted subgrid logs, decentralized blockchain ledgers, and synthetic neurological memories of the first carbon-silicon hybrid netrunners.",
+    description: "A solid gold ritual scepter shaped as an Ankh, symbolic of eternal life, excavated from the tomb of Pharaoh Ramses II. Detailed with lapis lazuli and carnelian inlays, it represents the high aesthetic and spiritual mastery of Egypt's New Kingdom.",
     technicalSpecs: [
-      "Material: Carbon-Silicon Hybrid Crystal",
-      "Dimensions: 12cm Dodecahedron",
-      "Storage Capacity: 8.42 Yottabytes",
-      "Encryption Model: Quantum-Diffused Shift",
-      "Interface Node: Optic Link Direct",
-      "Extraction Source: Subgrid Deep Enclave",
-      "Temporal Sector: Cyberpunk-Z9",
-      "Chronological Half-Life: Radioactive/Active"
+      "Material: Solid Gold & Lapis Lazuli Inlays",
+      "Dimensions: 28cm height, 14cm width",
+      "Weight: 650 grams",
+      "Symbolic Meaning: Key of Life & Eternity",
+      "Dynasty: 19th Dynasty of Egypt",
+      "Restoration Status: Fully Intact",
+      "Temporal Sector: Egypt-E1",
+      "Chronological Half-Life: Stable"
     ],
-    rarity: "Encrypted",
-    colorTheme: "border-cyan-800/30 hover:border-cyan-700/60 shadow-cyan-950/10",
-    accentText: "text-cyan-400",
-    badgeBg: "bg-cyan-950/40 text-cyan-400 border-cyan-800/30"
+    rarity: "Imperial",
+    colorTheme: "border-yellow-700/30 hover:border-yellow-600/60 shadow-yellow-950/15",
+    accentText: "text-amber-500",
+    badgeBg: "bg-amber-950/40 text-amber-500 border-amber-800/30"
   },
   {
     id: "harappa-bull",

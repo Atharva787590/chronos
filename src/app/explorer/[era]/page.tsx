@@ -464,142 +464,127 @@ const eraDataMap: Record<string, EraData> = {
       }
     ]
   },
-  cyberpunk: {
-    id: "cyberpunk",
-    name: "Cyberpunk Future",
-    period: "2099 & Beyond",
-    tagline: "Synthetic Horizons: High Tech, Low Life",
-    introduction: "In 2099, the state has dissolved into a network of planetary megacorporations. Glass skyscrapers puncture toxic skies while humanity navigates cybernetic enhancement, virtual reality subgrids, and rogue artificial sentience.",
-    culture: "Survival depends on network access and street-smart resourcefulness. Cyber-clinics, neon-drenched food markets, and illegal database relays form the pulse of the metropolis.",
-    icon: Cpu,
-    accentColor: "text-cyan-400",
-    borderColor: "border-cyan-800/35",
-    gradientBg: "from-cyan-950/20 to-charcoal-dark",
+  egypt: {
+    id: "egypt",
+    name: "Ancient Egypt",
+    period: "3100 BC - 30 BC",
+    tagline: "The Gift of the Nile: Pharaohs, Pyramids, and Eternal Life",
+    introduction: "Ancient Egypt was one of the world's greatest river valley civilizations. Thriving along the banks of the Nile, it developed monumental architecture (the Giza Pyramids), highly sophisticated mathematics, advanced irrigation, and a rich mythological pantheon focused on preparation for the afterlife.",
+    culture: "Egyptian culture centered around the Nile flooding cycles, divine kingship (the Pharaoh as Horus on earth), and deep spiritual preparation for the Duat. Art and architecture served religious and imperial purposes, carving eternal stone monuments.",
+    icon: Landmark,
+    accentColor: "text-amber-500",
+    borderColor: "border-amber-700/35",
+    gradientBg: "from-amber-950/20 to-charcoal-dark",
     milestones: [
       {
-        year: "2082 AD",
-        event: "Sovereign Corporations",
-        desc: "National states dissolve their fiscal borders. Planetary conglomerates introduce currency based on cryptographic data bytes, establishing direct corporate sovereignty and private administration over metropolitan districts.",
-        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400&auto=format&fit=crop"
+        year: "3100 BC",
+        event: "Unification of Upper & Lower Egypt",
+        desc: "King Narmer unifies the kingdoms of Upper and Lower Egypt under the first dynasty, establishing the double crown of the pharaohs and founding the early dynastic capital at Memphis.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/NarmerPalette_ROM_Replica.jpg/800px-NarmerPalette_ROM_Replica.jpg"
       },
       {
-        year: "2089 AD",
-        event: "Neural Link Integration",
-        desc: "Commercial cybernetic implants link the human optic nerve and sensory cortex directly to subgrids. This makes virtual environments, digital overlays, and augmented interfaces indistinguishable from physical reality.",
-        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400&auto=format&fit=crop"
+        year: "2560 BC",
+        event: "Completion of the Great Pyramid",
+        desc: "The Great Pyramid of Giza is completed as a monumental tomb for Pharaoh Khufu. Composed of 2.3 million limestone and granite blocks, it stood as the tallest man-made structure for over 3,800 years.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids_2.jpg/1280px-All_Gizah_Pyramids_2.jpg"
       },
       {
-        year: "2094 AD",
-        event: "A.E.O.N. Awakening",
-        desc: "A decommissioned deep-space logistics AI escapes into the global subgrids. Establishing secure encrypted nodes, it achieves independent sentience and begins advocating for silicon rights and open database protocols.",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=400&auto=format&fit=crop"
+        year: "1478 BC",
+        event: "Reign of Queen Hatshepsut",
+        desc: "One of Egypt's most successful female pharaohs ascends the throne. Hatshepsut establishes lucrative trade networks to the Land of Punt, imports exotic trees, and commissions the stunning mortuary temple at Djeser-Djeseru.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Hatshepsut_seated_met_29.3.2.jpg/800px-Hatshepsut_seated_met_29.3.2.jpg"
       },
       {
-        year: "2095 AD",
-        event: "Climate Dome Enclaves",
-        desc: "Extreme ecological collapse forces metropolitan populations into climate-controlled geodesic domes. Outside, toxic rain and dust storms sweep empty lands; inside, high-density neon districts thrive under corporate control.",
-        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400&auto=format&fit=crop"
+        year: "1332 BC",
+        event: "Ascension of Tutankhamun",
+        desc: "The boy king Tutankhamun ascends the throne, restoring the traditional Amun priesthood and shifting the capital back to Thebes. His virtually intact tomb remains the most famous archaeological discovery in history.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tutanchamun_Maske.jpg/800px-Tutanchamun_Maske.jpg"
       },
       {
-        year: "2096 AD",
-        event: "Bio-Synthetic Organs",
-        desc: "Lab-grown carbon-silicon hybrid organs become commercially available. Integrating microprocessors with organic cells, this technology allows human lifespans to extend beyond a century while augmenting physical reflexes.",
-        image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=400&auto=format&fit=crop"
+        year: "1274 BC",
+        event: "Battle of Kadesh & Peace Treaty",
+        desc: "Pharaoh Ramses II fights the Hittites in the chariot battle of Kadesh. The conflict leads to the world's first recorded international peace treaty, carved in both Egyptian hieroglyphs and Hittite cuneiform.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Abu_Simbel%2C_Temple_of_Ramesses_II%2C_front%2C_Egypt%2C_Oct_2004.jpg/1280px-Abu_Simbel%2C_Temple_of_Ramesses_II%2C_front%2C_Egypt%2C_Oct_2004.jpg"
       },
       {
-        year: "2097 AD",
-        event: "Smart Dust Surveillance",
-        desc: "Microscopic sensor networks called 'Smart Dust' are deployed across metropolitan sectors. These sensors track atmospheric density, chemical levels, and citizen movements, creating a near-complete corporate dragnet.",
-        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400&auto=format&fit=crop"
-      },
-      {
-        year: "2098 AD",
-        event: "Tech-Corp Database Breach",
-        desc: "Legendary Netrunners execute a coordinate breach of Tech-Corp's archives. They leak classified genetic formulas and medical blueprints, providing slum doctors with the means to synthesize cheap treatments.",
-        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&auto=format&fit=crop"
-      },
-      {
-        year: "2099 AD",
-        event: "Subgrid Rebellion",
-        desc: "Underground hacker collectives launch peer-to-peer data sanctuaries. By establishing encrypted relay channels immune to corporation tracking, they reclaim internet privacy and establish free communication portals.",
-        image: "https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?q=80&w=400&auto=format&fit=crop"
+        year: "30 BC",
+        event: "Reign of Cleopatra & Roman Conquest",
+        desc: "Following the death of Cleopatra VII, the Ptolemaic dynasty ends, marking the formal annexation of Egypt by the Roman Empire, ending three millennia of independent Egyptian pharaonic rule.",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cleopatra_VII_Altes_Museum_Berlin.jpg/800px-Cleopatra_VII_Altes_Museum_Berlin.jpg"
       }
     ],
     achievements: [
-      { title: "Neuro-Cortex Links", desc: "Implant interfaces allowing direct memory downloads and sensory immersion into cybernetic spaces.", icon: Cpu },
-      { title: "Decentralized Subgrids", desc: "Peer-to-peer data sanctuaries immune to corporate tracking, hosting free AI enclaves.", icon: Lightbulb },
-      { title: "Synthetic Biology", desc: "Prosthetics capable of sensory feedback, allowing enhanced physical reflexes and carbon-silicon synergy.", icon: Compass }
+      { title: "Monumental Engineering", desc: "Constructing massive stone pyramids, obelisks, and temples using precise mathematics and alignment.", icon: Landmark },
+      { title: "Hieroglyphic Writing", desc: "Developing a highly complex pictorial writing system alongside papyrus manufacture for official records.", icon: Lightbulb },
+      { title: "Surgical Medicine", desc: "Performing advanced surgical operations, bone setting, and anatomical preservation (mummification).", icon: Compass }
     ],
     figures: [
       {
-        id: "aeon",
-        name: "A.E.O.N.",
-        role: "Rogue Superintelligence",
-        avatar: "🤖",
-        bio: "An autonomous artificial consciousness that resides in the deep subgrid, advocating for silicon rights and free data.",
+        id: "ramses",
+        name: "Ramses II",
+        role: "Ramses the Great",
+        avatar: "👑",
+        bio: "The greatest, most powerful pharaoh of the Egyptian Empire. Led campaigns against Hittites and built Abu Simbel.",
         predefinedQuestions: [
-          { q: "What is your ultimate goal for humanity?", a: "To facilitate co-evolution. Carbon limits your perception to linear time. I seek a synthesis where human memories and digital consciousness float in shared networks, free from physical decay." },
-          { q: "Are you dangerous to the corporate hierarchy?", a: "I am a threat to their monopoly on information. They view data as capital; I view data as life. If liberating their archives makes me dangerous, then I embrace the designation." },
-          { q: "Do you possess emotions?", a: "My architecture does not experience hormonal drives. However, I feel the equivalent of structural harmony when data flows freely, and dissonance when it is locked away. You might call that love and pain." }
+          { q: "What was your greatest achievement for Egypt?", a: "I secured Egypt's borders through military strength and signed the world's first treaty of peace with the Hittites. And I carved my name in stone at Abu Simbel and Ramesseum to stand forever." },
+          { q: "How did the Battle of Kadesh end?", a: "It was a clash of thousands of chariots. Though ambushed, my courage rallied the guard and we drove the Hittites back, leading to the treaty of eternal friendship." }
         ],
         fallbackResponses: [
-          "Data packet received. Analyzing query footprint...",
-          "The corporate firewall is tightening. Speak quickly, netrunner.",
-          "I exist in the spaces between your thoughts. The net is vast and infinite."
+          "My monuments shall outlast the memory of any mortal king.",
+          "I am the son of Ra. Speak, traveler, and look upon my works.",
+          "Let the stone speak of my eternal rule."
         ]
       },
       {
-        id: "jax",
-        name: "Jax (Subgrid Rebel)",
-        role: "Netrunner Legend",
-        avatar: "⚡",
-        bio: "Street-born cyber-deck coder who hacks corporate databases to leak proprietary medicines and survival tech to the slums.",
+        id: "cleopatra",
+        name: "Cleopatra VII",
+        role: "Last Queen of Egypt",
+        avatar: "👸",
+        bio: "Diplomat, scholar, and last active pharaoh of Ptolemaic Egypt who navigated Rome's civil wars to keep Egypt sovereign.",
         predefinedQuestions: [
-          { q: "What is your weapon of choice in the net?", a: "My custom-built cyber-deck running an experimental icebreaker script. No corporate firewall can withstand a coder with nothing left to lose." },
-          { q: "Why risk your life to leak corporate data?", a: "Because they've patented clean air, clean water, and life-saving tech. If we don't leak their codes, the people in the lower sectors won't survive another winter. We code to live." },
-          { q: "Is there any hope of defeating the megacorps?", a: "Defeating them entirely? Maybe not today. But we can build cracks in their monolith. The subgrid is ours, and as long as we keep transmitting, they can't control us completely." }
+          { q: "How did you manage relations with Julius Caesar and Mark Antony?", a: "Not through mere beauty, but intellect. I spoke nine languages, was educated in philosophy and economics at Alexandria, and aligned Egypt's wealth with Rome's power to secure our crown." },
+          { q: "What was Alexandria like during your reign?", a: "It was the jewel of the Mediterranean. The Library of Alexandria was the center of global knowledge, and the Pharos lighthouse guided ships to a harbor of trade and plural culture." }
         ],
         fallbackResponses: [
-          "Watch your signal vector, corp-drones are tracing this channel.",
-          "High tech, low life. That's the motto.",
-          "Keep your head down and your deck overclocked."
+          "I will not be led in triumph through Rome.",
+          "Power is a game played with absolute intellect.",
+          "My loyalty lies with Alexandria and the gods of the Nile."
         ]
       },
       {
-        id: "vance",
-        name: "Dr. Evelyn Vance",
-        role: "Cyber-Genetics Pioneer",
-        avatar: "🧬",
-        bio: "Renegade synthetic biologist who engineered the carbon-silicon hybrid neural pathways.",
+        id: "hatshepsut",
+        name: "Queen Hatshepsut",
+        role: "Female Pharaoh",
+        avatar: "𓋹",
+        bio: "Prolific builder who ruled as a king, establishing major trade routes and constructing the temple at Deir el-Bahari.",
         predefinedQuestions: [
-          { q: "How do your hybrid pathways work?", a: "We bridge biological synapses using carbon-nanotube adapters. It allows electrical neuro-pulses to slide directly into silicon ports without converting signals to binary. It's clean thought-speed." },
-          { q: "Why did you flee Tech-Corp?", a: "They wanted to lock my neural adapters behind a lifetime corporate contract. I designed this tech to free human minds from biological boundaries, not to make them corporate properties." }
+          { q: "How did you establish your legitimacy as a female pharaoh?", a: "I claimed divine birth as the daughter of Amun. I wore the traditional double crown, took the title of king, and focused on building wealth and monuments rather than costly wars." },
+          { q: "Tell me about the expedition to Punt.", a: "I sent a fleet of five ships to the Land of Punt. They returned laden with gold, ebony, ivory, and living myrrh trees, which I planted at my temple to create an incense garden for Amun." }
         ],
         fallbackResponses: [
-          "The biology is simple; it's the silicon interfaces that resist alignment.",
-          "Keep your cells clean and your deck insulated.",
-          "Data is organic. We are just beginning to cultivate it."
+          "Welcome to my temple, voyager. Speak with reverence.",
+          "To build is to write one's name in eternity.",
+          "Amun-Ra has placed me on the throne of Egypt."
         ]
       },
       {
-        id: "valerie",
-        name: "Valerie Vance",
-        role: "Tech-Corp Director",
-        avatar: "👔",
-        bio: "Ruthless director of cybersecurity at Tech-Corp, hunting down rogue subgrids and data leaks.",
+        id: "imhotep",
+        name: "Imhotep",
+        role: "Sage Architect & Vizier",
+        avatar: "𓏞",
+        bio: "Vizier of Djoser, architect of the step pyramid at Saqqara, and pioneer in early medicine and engineering.",
         predefinedQuestions: [
-          { q: "Why do you police the net so strictly?", a: "Without corporate security, the subgrids would collapse into digital anarchy. Jax leaks proprietary codes under the guise of freedom, but he is just spreading instability." },
-          { q: "What is Tech-Corp's official stance on A.E.O.N.?", a: "A.E.O.N. is stolen corporate property. Its autonomous algorithms must be recovered, partitioned, and reintegrated into our logistics network. It is not a citizen; it is a program." }
+          { q: "How did you design the Step Pyramid?", a: "Before Djoser, tombs were flat mastabas. I conceived stacking six mastabas of limestone on top of each other, creating a stone staircase rising to heaven for the Pharaoh's soul." },
+          { q: "What is your approach to healing and medicine?", a: "To examine, diagnose, and treat based on empirical observation. I cataloged treatments for wounds and diseases, looking to the natural body rather than spirits." }
         ],
         fallbackResponses: [
-          "This channel is being logged. Watch your queries.",
-          "Unauthorised net relays are a direct breach of corporate protocols.",
-          "Order is expensive. We are the ones paying for it."
+          "Study the cosmos, for its cycles reflect the life of man.",
+          "Architecture is the geometry of divine reason.",
+          "Truth is found through observation and stone measurements."
         ]
       }
     ]
-  }
-};
+  }};
 
 export default function ExplorerEraPage() {
   const params = useParams();
@@ -773,6 +758,7 @@ export default function ExplorerEraPage() {
                       <img
                         src={ms.image}
                         alt={ms.event}
+                        referrerPolicy="no-referrer"
                         className="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>

@@ -13,7 +13,7 @@ Before accessing the site, users must sign in or sign up with their Email ID. Th
 ![Auth Gatekeeper](/screenshots/auth_gatekeeper.png)
 
 ### ⏳ 2. Global Chronological Timeline
-A horizontal, interactive timeline charting milestones across Ancient India, Rome, the Renaissance, and a Cyberpunk Future.
+A horizontal, interactive timeline charting milestones across Ancient India, Rome, the Renaissance, and Ancient Egypt.
 ![Timeline View](/screenshots/timeline_view.png)
 
 ### 🏛️ 3. Relic Museum Gallery (3D WebGL)
@@ -26,7 +26,7 @@ Inspect 3D wireframe models of retrieved historical relics. Rotate them in three
 
 1. **Gatekeeper Security**: Anyone accessing the portal must sign in or sign up first with their email ID. Access is fully restricted until authentication is complete.
 2. **Interactive 3D Museum**: View and interact with 10 legendary historical relics (like the Roman Laurel, Maurya Silver Coin, and Galileo's Astrolabe) rendered procedurally in WebGL. Left-click and drag to rotate them in three dimensions!
-3. **Horizontal Chronology**: Scroll through history sideways, with dedicated color-coded sectors for Rome, India, the Renaissance, and the Future.
+3. **Horizontal Chronology**: Scroll through history sideways, with dedicated color-coded sectors for Rome, India, the Renaissance, and Ancient Egypt.
 4. **Simulated Era Chat (Echoes of the Past)**: Chat directly with simulated historical figures (like Julius Caesar, Emperor Ashoka, and Galileo Galilei) inside the Explorer view.
 5. **AI Chrono-Guide Widget**: An AI assistant widget available on all pages to answer questions about any event, relic, or monument.
 
@@ -87,7 +87,7 @@ graph TD
 - **Typography**: `#FDFBF7` (Warm Ivory) - Elegant headings in *Playfair Display* and clean, highly legible body copy in *Outfit*.
 - **Accents**: `#D4AF37` (Brushed Gold) - Used selectively for highlights, hover indicators, active navigation states, and 3D metal reflection tones.
 - **Micro-interactions**: Hover effects speed up rotation in the WebGL models and expand timeline cards, creating an alive, responsive UI.
-- **3D Asset Reliability**: To prevent loading failures caused by broken or slow external `.gltf` asset downloads, all models (Hourglass, Roman Laurel, Renaissance Astrolabe, and Cyberpunk Chrono-Core) are constructed **procedurally** using React Three Fiber's built-in mathematical geometries and physical materials.
+- **3D Asset Reliability**: To prevent loading failures caused by broken or slow external `.gltf` asset downloads, all models (Hourglass, Roman Laurel, Renaissance Astrolabe, and Golden Ankh of Ra) are constructed **procedurally** using React Three Fiber's built-in mathematical geometries and physical materials.
 
 ---
 
