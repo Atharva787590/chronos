@@ -87,7 +87,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "122 AD",
     title: "Hadrian's Chrono-Fortress",
     summary: "Construction begins on a 73-mile defensive wall in Britannia, fitted with signal towers and steam-powered signal horns to control the imperial frontier.",
-    imageUrl: "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hadrians_Wall_view_near_Greenhead_Lough.jpg/1280px-Hadrians_Wall_view_near_Greenhead_Lough.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -99,7 +99,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "313 AD",
     title: "Constantine's Solar Decree",
     summary: "Constantine legalizes Christianity, transmitting the message across the empire via reflective brass solar mirrors (heliographs) for synchronized reception.",
-    imageUrl: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Arch_of_Constantine_Rome.jpg/1280px-Arch_of_Constantine_Rome.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -111,7 +111,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "476 AD",
     title: "De-Synchronization of Rome",
     summary: "The central gear-clock of Ravenna is dismantled by Odoacer, causing the Western Empire to de-synchronize from the imperial network.",
-    imageUrl: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mausoleum_of_Theodoric_Ravenna.jpg/1280px-Mausoleum_of_Theodoric_Ravenna.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -124,7 +124,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "2500 BC",
     title: "Pneumatic Sanitation Grid",
     summary: "Mohenjo-daro installs pressurized copper pneumatic water filtration tubes, creating the ancient world's finest municipal sanitation grid.",
-    imageUrl: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Mohenjodaro_Sindh.jpeg/1024px-Mohenjodaro_Sindh.jpeg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -136,7 +136,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1500 BC",
     title: "Phonetic Vocal Calculators",
     summary: "Sanskrit scholars program oral chants with mathematical syntax, serving as acoustic vocal data stores to preserve cosmological information.",
-    imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rig_Veda_MS2097.jpg/1024px-Rig_Veda_MS2097.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -148,7 +148,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "599 BC",
     title: "Ahimsa Harmonic Protocol",
     summary: "Mahavira codifies Jain philosophy, establishing the Ahimsa non-harming protocol to maintain biological harmony across all living organisms.",
-    imageUrl: "https://images.unsplash.com/photo-1602693680203-b0eb033b0068?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Dilwara_Temples.jpg/1280px-Dilwara_Temples.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -160,7 +160,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "563 BC",
     title: "Mind-State Synchronization",
     summary: "Gautama Buddha achieves full neural synchronization under the Bodhi Tree, mapping the Four Noble Truths to override human emotional suffering.",
-    imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mahabodhi_Temple_Bodh_Gaya.jpg/1280px-Mahabodhi_Temple_Bodh_Gaya.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -172,7 +172,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "322 BC",
     title: "Kautilya's Spy Network",
     summary: "Chandragupta Maurya and Chanakya establish a highly organized spy intelligence network using coded letters and secret optical signaling.",
-    imageUrl: "https://images.unsplash.com/photo-1566121318574-df6377c8ef4a?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chandragupta_Maurya.jpg/800px-Chandragupta_Maurya.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -184,7 +184,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "261 BC",
     title: "Dhamma Rock Transmitters",
     summary: "Ashoka carves his moral code onto rock pillars across India, turning pillars into permanent communication hubs for ethical instruction.",
-    imageUrl: "https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Vaishali_Ashoka_pillar.jpg/800px-Vaishali_Ashoka_pillar.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -196,7 +196,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "78 AD",
     title: "Silk Road Trading Hub",
     summary: "Kanishka unifies the transcontinental Silk Road, establishing copper currency standards and trade control outposts.",
-    imageUrl: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Kanishka_coin.jpg/800px-Kanishka_coin.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -208,7 +208,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "320 AD",
     title: "Sanskrit Golden Codex",
     summary: "Chandragupta I initiates the golden age of metallurgy, crafting the rust-free Delhi Iron Pillar as a metallurgical wonder.",
-    imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Iron_pillar_of_Delhi.jpg/400px-Iron_pillar_of_Delhi.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -220,7 +220,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "499 AD",
     title: "Zero-Origin Calculation Gear",
     summary: "Aryabhata devises the gears-of-zero math system, proving the Earth's rotation and calculating planetary orbits with high precision.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Aryabhata_Statue.jpg/800px-Aryabhata_Statue.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -232,7 +232,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "630 AD",
     title: "Nalanda Central Library",
     summary: "Nalanda reaches peak capacity, holding thousands of scrolls containing ancient treatises on logic, medicine, and mechanical calculations.",
-    imageUrl: "https://images.unsplash.com/photo-1627894006066-b457936e6765?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Nalanda_University_ruins1.JPG/1024px-Nalanda_University_ruins1.JPG",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -244,7 +244,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "757 AD",
     title: "Monolithic Basalt Excavation",
     summary: "Engineers carve the massive Kailash temple from the top-down out of a single basalt mountain, removing 200,000 tons of rock.",
-    imageUrl: "https://images.unsplash.com/photo-1608958416712-4fe2e82500be?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ellora_cave_16_Kailasha_temple_panorama.jpg/1024px-Ellora_cave_16_Kailasha_temple_panorama.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -256,7 +256,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1010 AD",
     title: "Granite Interlocking System",
     summary: "Chola builders lift an 81-ton monolithic dome to the top of a 216-foot tower, using mortar-free interlocking granite blocks.",
-    imageUrl: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Brihadisvara_Temple_Thanjavur.jpg/1280px-Brihadisvara_Temple_Thanjavur.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -269,7 +269,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1308 AD",
     title: "Vernacular Thought Codex",
     summary: "Dante codes the Divine Comedy in vernacular Italian, bypassing traditional Latin to democratize literature and human morality.",
-    imageUrl: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dante_Alighieri_by_Sandro_Botticelli.jpg/800px-Dante_Alighieri_by_Sandro_Botticelli.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -281,7 +281,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1440 AD",
     title: "Steam-Press Movable Type",
     summary: "Gutenberg builds a high-pressure mechanical type-press, accelerating book production and democratizing knowledge distribution.",
-    imageUrl: "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Buchdruck_im_15_Jh.jpg/800px-Buchdruck_im_15_Jh.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -293,7 +293,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1492 AD",
     title: "Steam Flight Sketches",
     summary: "Leonardo da Vinci drafts mechanical blueprints for human flight, including gear systems for the ornithopter and aerial screw.",
-    imageUrl: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Leonardo_da_Vinci_helicopter.jpg/800px-Leonardo_da_Vinci_helicopter.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -305,7 +305,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1504 AD",
     title: "Anatomical Marble Precision",
     summary: "Michelangelo chisels David with near-perfect biological accuracy, demonstrating the renaissance mastery of human geometry.",
-    imageUrl: "https://images.unsplash.com/photo-1614701167693-85ae30ff3c4d?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Michelangelo%27s_David_-_right_view_2.jpg/400px-Michelangelo%27s_David_-_right_view_2.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -317,7 +317,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1508 AD",
     title: "Ceiling Fresco Matrix",
     summary: "Michelangelo paints the Sistine Chapel ceiling, creating a massive visual grid of Genesis using complex geometric perspectives.",
-    imageUrl: "https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/GodandAdamCutout.jpg/1280px-GodandAdamCutout.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -329,7 +329,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1543 AD",
     title: "Heliocentric Orbit Model",
     summary: "Copernicus publishes his mathematical calculations placing the Sun at the center of the solar system, replacing geocentrism.",
-    imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Nicolaus_Copernicus.jpg/800px-Nicolaus_Copernicus.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -341,7 +341,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1597 AD",
     title: "Acoustic Globe Theatre",
     summary: "The Globe Theatre is constructed with wooden acoustic rings, maximizing sound projection for Shakespeare's deep human dramas.",
-    imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Shakespeare_Globe_Theatre_London.jpg/1280px-Shakespeare_Globe_Theatre_London.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -353,7 +353,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1610 AD",
     title: "Optic Focal Lens Observer",
     summary: "Galileo develops a double-lens optic spyglass, recording Jupiter's moons and providing empirical proof of heliocentrism.",
-    imageUrl: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Galileo_telescope.jpg/800px-Galileo_telescope.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -366,7 +366,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "3100 BC",
     title: "Dynastic Border Merger",
     summary: "King Narmer unifies Upper and Lower Egypt under a single administrative grid, symbolized by the double-crown crown protocol.",
-    imageUrl: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Narmer_Palette_verso.jpg/400px-Narmer_Palette_verso.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -378,7 +378,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "2560 BC",
     title: "Solar Pyramid Accumulator",
     summary: "Pharaoh Khufu commissions the Great Pyramid of Giza, clad in white limestone to act as a colossal solar-focusing heat energy accumulator.",
-    imageUrl: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -390,7 +390,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1478 BC",
     title: "Punt Expedition Fleet",
     summary: "Hatshepsut launches a massive fleet of deep-sea cargo ships to Punt, returning with gold, ivory, and live incense trees.",
-    imageUrl: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Deir_el-Bahari_Hatshepsut_Temple.jpg/1280px-Deir_el-Bahari_Hatshepsut_Temple.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -402,7 +402,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1332 BC",
     title: "Thebes Coordinate Reset",
     summary: "Tutankhamun resets the imperial capital back to Thebes, restoring traditional temple priesthood operations and structural grids.",
-    imageUrl: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tutankhamun_Mask.jpg/800px-Tutankhamun_Mask.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -414,7 +414,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1274 BC",
     title: "The Kadesh Chronometer",
     summary: "Ramses II fights the Hittites in a massive chariot battle, leading to the world's first recorded international peace treaty, sealed inside a mechanical brass coordinate-box.",
-    imageUrl: "https://images.unsplash.com/photo-1501139083538-0139583c060f?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Abu_simbel_temple.jpg/1024px-Abu_simbel_temple.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -426,7 +426,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "30 BC",
     title: "Imperial Network Annexation",
     summary: "Cleopatra VII's reign concludes, and Egypt's agricultural breadbasket grid is annexed as a central province of the Roman Empire.",
-    imageUrl: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=800",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/800px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
