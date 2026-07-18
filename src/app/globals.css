@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #D4AF37;
+  --color-accent-muted: #B3922E;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-dark: #121212;
+  --color-warm-ivory: #FDFBF7;
+  
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-outfit: "Outfit", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  background-color: #1A1A1A;
+  color: #FDFBF7;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B3922E;
+}
+
+/* Base Body Styling */
+body {
+  font-family: var(--font-outfit);
+  background-color: #1A1A1A;
+  color: #FDFBF7;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #D4AF37;
+  color: #121212;
+}
+
+/* Era Specific Utility Colors */
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #B3922E 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FDFBF7 0%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
