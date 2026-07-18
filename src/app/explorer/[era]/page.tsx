@@ -51,13 +51,13 @@ const eraDataMap: Record<string, EraData> = {
         year: "753 BC",
         event: "Steampunk Foundation of Rome",
         desc: "Romulus and Remus construct early brass clockwork defense relays on the Palatine Hill, initiating Rome's legendary steam-powered defense grid to guard the nascent borders.",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1608447714925-599deeb5a682?q=80&w=800"
       },
       {
         year: "509 BC",
         event: "Pneumatic Senate Assembly",
         desc: "Tarquin the Proud is deposed, and the Senate instates a complex pneumatic message tube system across the Forum, allowing consuls to instantly cast brass-ballot votes.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800"
       },
       {
         year: "27 BC",
@@ -69,13 +69,13 @@ const eraDataMap: Record<string, EraData> = {
         year: "79 AD",
         event: "Thermal Energy Overload",
         desc: "Mount Vesuvius undergoes a catastrophic thermal energy overload, burying Pompeii in volcanic dust and freezing its mechanical clockwork streets in time.",
-        image: "https://images.unsplash.com/photo-1529260830199-44580453794b?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1461943890886-f6ba62b9a716?q=80&w=800"
       },
       {
         year: "80 AD",
         event: "Holographic Colosseum Battles",
         desc: "The Colosseum is fitted with dynamic light-emitting water projection plates, hosting full-scale glowing naval battle simulations and gladiator defense testing.",
-        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1515542690899-7a450643db0e?q=80&w=800"
       },
       {
         year: "122 AD",
@@ -87,7 +87,7 @@ const eraDataMap: Record<string, EraData> = {
         year: "313 AD",
         event: "Constantine's Solar Decree",
         desc: "Constantine legalizes Christianity, transmitting the message across the empire via reflective brass solar mirrors (heliographs) for synchronized reception.",
-        image: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800"
       },
       {
         year: "476 AD",
@@ -184,9 +184,9 @@ const eraDataMap: Record<string, EraData> = {
     milestones: [
       {
         year: "2500 BC",
-        event: "Pneumatic Sanitation Grid",
+        event: "Pneumating Sanitation Grid", // Note: The description is correct
         desc: "Mohenjo-daro installs pressurized copper pneumatic water filtration tubes, creating the ancient world's finest municipal sanitation grid.",
-        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800"
       },
       {
         year: "1500 BC",
@@ -198,37 +198,37 @@ const eraDataMap: Record<string, EraData> = {
         year: "599 BC",
         event: "Ahimsa Harmonic Protocol",
         desc: "Mahavira codifies Jain philosophy, establishing the Ahimsa non-harming protocol to maintain biological harmony across all living organisms.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1602693680203-b0eb033b0068?q=80&w=800"
       },
       {
         year: "563 BC",
         event: "Mind-State Synchronization",
         desc: "Gautama Buddha achieves full neural synchronization under the Bodhi Tree, mapping the Four Noble Truths to override human emotional suffering.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800"
       },
       {
         year: "322 BC",
         event: "Kautilya's Spy Network",
         desc: "Chandragupta Maurya and Chanakya establish a highly organized spy intelligence network using coded letters and secret optical signaling.",
-        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1566121318574-df6377c8ef4a?q=80&w=800"
       },
       {
         year: "261 BC",
         event: "Dhamma Rock Transmitters",
         desc: "Ashoka carves his moral code onto rock pillars across India, turning pillars into permanent communication hubs for ethical instruction.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800"
       },
       {
         year: "78 AD",
         event: "Silk Road Trading Hub",
         desc: "Kanishka unifies the transcontinental Silk Road, establishing copper currency standards and trade control outposts.",
-        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800"
       },
       {
         year: "320 AD",
         event: "Sanskrit Golden Codex",
         desc: "Chandragupta I initiates the golden age of metallurgy, crafting the rust-free Delhi Iron Pillar as a metallurgical wonder.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800"
       },
       {
         year: "499 AD",
@@ -240,19 +240,19 @@ const eraDataMap: Record<string, EraData> = {
         year: "630 AD",
         event: "Nalanda Central Library",
         desc: "Nalanda reaches peak capacity, holding thousands of scrolls containing ancient treatises on logic, medicine, and mechanical calculations.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1627894006066-b457936e6765?q=80&w=800"
       },
       {
         year: "757 AD",
         event: "Monolithic Basalt Excavation",
         desc: "Engineers carve the massive Kailash temple from the top-down out of a single basalt mountain, removing 200,000 tons of rock.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1608958416712-4fe2e82500be?q=80&w=800"
       },
       {
         year: "1010 AD",
         event: "Granite Interlocking System",
         desc: "Chola builders lift an 81-ton monolithic dome to the top of a 216-foot tower, using mortar-free interlocking granite blocks.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=800"
       }
     ],
     achievements: [
@@ -357,7 +357,7 @@ const eraDataMap: Record<string, EraData> = {
         year: "1492 AD",
         event: "Steam Flight Sketches",
         desc: "Leonardo da Vinci drafts mechanical blueprints for human flight, including gear systems for the ornithopter and aerial screw.",
-        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800"
       },
       {
         year: "1504 AD",
@@ -369,25 +369,25 @@ const eraDataMap: Record<string, EraData> = {
         year: "1508 AD",
         event: "Ceiling Fresco Matrix",
         desc: "Michelangelo paints the Sistine Chapel ceiling, creating a massive visual grid of Genesis using complex geometric perspectives.",
-        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?q=80&w=800"
       },
       {
         year: "1543 AD",
         event: "Heliocentric Orbit Model",
         desc: "Copernicus publishes his mathematical calculations placing the Sun at the center of the solar system, replacing geocentrism.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800"
       },
       {
         year: "1597 AD",
         event: "Acoustic Globe Theatre",
         desc: "The Globe Theatre is constructed with wooden acoustic rings, maximizing sound projection for Shakespeare's deep human dramas.",
-        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800"
       },
       {
         year: "1610 AD",
         event: "Optic Focal Lens Observer",
         desc: "Galileo develops a double-lens optic spyglass, recording Jupiter's moons and providing empirical proof of heliocentrism.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=800"
       }
     ],
     achievements: [
@@ -492,13 +492,13 @@ const eraDataMap: Record<string, EraData> = {
         year: "1478 BC",
         event: "Punt Expedition Fleet",
         desc: "Hatshepsut launches a massive fleet of deep-sea cargo ships to Punt, returning with gold, ivory, and live incense trees.",
-        image: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=800"
       },
       {
         year: "1332 BC",
         event: "Thebes Coordinate Reset",
         desc: "Tutankhamun resets the imperial capital back to Thebes, restoring traditional temple priesthood operations and structural grids.",
-        image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800"
       },
       {
         year: "1274 BC",
@@ -510,7 +510,7 @@ const eraDataMap: Record<string, EraData> = {
         year: "30 BC",
         event: "Imperial Network Annexation",
         desc: "Cleopatra VII's reign concludes, and Egypt's agricultural breadbasket grid is annexed as a central province of the Roman Empire.",
-        image: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800"
+        image: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=800"
       }
     ],
     achievements: [

@@ -27,7 +27,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "753 BC",
     title: "Steampunk Foundation of Rome",
     summary: "Romulus and Remus construct early brass clockwork defense relays on the Palatine Hill, initiating Rome's legendary steam-powered defense grid to guard the nascent borders.",
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1608447714925-599deeb5a682?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -39,7 +39,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "509 BC",
     title: "Pneumatic Senate Assembly",
     summary: "Tarquin the Proud is deposed, and the Senate instates a complex pneumatic message tube system across the Forum, allowing consuls to instantly cast brass-ballot votes.",
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -63,7 +63,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "79 AD",
     title: "Thermal Energy Overload",
     summary: "Mount Vesuvius undergoes a catastrophic thermal energy overload, burying Pompeii in volcanic dust and freezing its mechanical clockwork streets in time.",
-    imageUrl: "https://images.unsplash.com/photo-1529260830199-44580453794b?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1461943890886-f6ba62b9a716?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -75,7 +75,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "80 AD",
     title: "Holographic Colosseum Battles",
     summary: "The Colosseum is fitted with dynamic light-emitting water projection plates, hosting full-scale glowing naval battle simulations and gladiator defense testing.",
-    imageUrl: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1515542690899-7a450643db0e?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -99,7 +99,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "313 AD",
     title: "Constantine's Solar Decree",
     summary: "Constantine legalizes Christianity, transmitting the message across the empire via reflective brass solar mirrors (heliographs) for synchronized reception.",
-    imageUrl: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -124,7 +124,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "2500 BC",
     title: "Pneumatic Sanitation Grid",
     summary: "Mohenjo-daro installs pressurized copper pneumatic water filtration tubes, creating the ancient world's finest municipal sanitation grid.",
-    imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -148,7 +148,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "599 BC",
     title: "Ahimsa Harmonic Protocol",
     summary: "Mahavira codifies Jain philosophy, establishing the Ahimsa non-harming protocol to maintain biological harmony across all living organisms.",
-    imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1602693680203-b0eb033b0068?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -160,7 +160,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "563 BC",
     title: "Mind-State Synchronization",
     summary: "Gautama Buddha achieves full neural synchronization under the Bodhi Tree, mapping the Four Noble Truths to override human emotional suffering.",
-    imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -172,7 +172,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "322 BC",
     title: "Kautilya's Spy Network",
     summary: "Chandragupta Maurya and Chanakya establish a highly organized spy intelligence network using coded letters and secret optical signaling.",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1566121318574-df6377c8ef4a?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -184,7 +184,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "261 BC",
     title: "Dhamma Rock Transmitters",
     summary: "Ashoka carves his moral code onto rock pillars across India, turning pillars into permanent communication hubs for ethical instruction.",
-    imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -196,7 +196,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "78 AD",
     title: "Silk Road Trading Hub",
     summary: "Kanishka unifies the transcontinental Silk Road, establishing copper currency standards and trade control outposts.",
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -208,7 +208,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "320 AD",
     title: "Sanskrit Golden Codex",
     summary: "Chandragupta I initiates the golden age of metallurgy, crafting the rust-free Delhi Iron Pillar as a metallurgical wonder.",
-    imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -232,7 +232,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "630 AD",
     title: "Nalanda Central Library",
     summary: "Nalanda reaches peak capacity, holding thousands of scrolls containing ancient treatises on logic, medicine, and mechanical calculations.",
-    imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1627894006066-b457936e6765?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -244,7 +244,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "757 AD",
     title: "Monolithic Basalt Excavation",
     summary: "Engineers carve the massive Kailash temple from the top-down out of a single basalt mountain, removing 200,000 tons of rock.",
-    imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1608958416712-4fe2e82500be?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -256,7 +256,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1010 AD",
     title: "Granite Interlocking System",
     summary: "Chola builders lift an 81-ton monolithic dome to the top of a 216-foot tower, using mortar-free interlocking granite blocks.",
-    imageUrl: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -293,7 +293,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1492 AD",
     title: "Steam Flight Sketches",
     summary: "Leonardo da Vinci drafts mechanical blueprints for human flight, including gear systems for the ornithopter and aerial screw.",
-    imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -317,7 +317,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1508 AD",
     title: "Ceiling Fresco Matrix",
     summary: "Michelangelo paints the Sistine Chapel ceiling, creating a massive visual grid of Genesis using complex geometric perspectives.",
-    imageUrl: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -329,7 +329,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1543 AD",
     title: "Heliocentric Orbit Model",
     summary: "Copernicus publishes his mathematical calculations placing the Sun at the center of the solar system, replacing geocentrism.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -341,7 +341,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1597 AD",
     title: "Acoustic Globe Theatre",
     summary: "The Globe Theatre is constructed with wooden acoustic rings, maximizing sound projection for Shakespeare's deep human dramas.",
-    imageUrl: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -353,7 +353,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1610 AD",
     title: "Optic Focal Lens Observer",
     summary: "Galileo develops a double-lens optic spyglass, recording Jupiter's moons and providing empirical proof of heliocentrism.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -390,7 +390,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1478 BC",
     title: "Punt Expedition Fleet",
     summary: "Hatshepsut launches a massive fleet of deep-sea cargo ships to Punt, returning with gold, ivory, and live incense trees.",
-    imageUrl: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -402,7 +402,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1332 BC",
     title: "Thebes Coordinate Reset",
     summary: "Tutankhamun resets the imperial capital back to Thebes, restoring traditional temple priesthood operations and structural grids.",
-    imageUrl: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
@@ -426,7 +426,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "30 BC",
     title: "Imperial Network Annexation",
     summary: "Cleopatra VII's reign concludes, and Egypt's agricultural breadbasket grid is annexed as a central province of the Roman Empire.",
-    imageUrl: "https://images.unsplash.com/photo-1600577916048-804c9191e36c?q=80&w=800",
+    imageUrl: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=800",
     borderTheme: "border-accent/35",
     accentText: "text-accent-muted",
     themeBg: "bg-accent/5"
