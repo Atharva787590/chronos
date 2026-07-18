@@ -49,6 +49,16 @@ export default function LandingPage() {
       accentText: "text-red-400",
     },
     {
+      id: "india",
+      name: "Ancient India",
+      period: "322 BC - 1050 AD",
+      icon: Compass,
+      description: "Delve into ancient stone empires, zero-origin math, and profound dharma paths that shaped global thoughts.",
+      color: "border-amber-700/40 hover:border-amber-600/60 shadow-amber-950/20",
+      accentBg: "bg-amber-800/10",
+      accentText: "text-amber-500",
+    },
+    {
       id: "renaissance",
       name: "The Renaissance",
       period: "14th - 17th Century",
@@ -148,7 +158,7 @@ export default function LandingPage() {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {eras.map((era, index) => {
               const IconComponent = era.icon;
               return (
@@ -158,33 +168,33 @@ export default function LandingPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.15, duration: 0.5 }}
-                  className={`bg-charcoal border ${era.color} p-8 rounded-2xl flex flex-col items-start gap-5 shadow-2xl transition-all hover:-translate-y-2 group`}
+                  className={`bg-charcoal border ${era.color} p-6 rounded-2xl flex flex-col items-start gap-4 shadow-2xl transition-all hover:-translate-y-2 group`}
                 >
-                  <div className={`p-4 rounded-xl ${era.accentBg} ${era.accentText}`}>
-                    <IconComponent className="w-7 h-7" />
+                  <div className={`p-3 rounded-xl ${era.accentBg} ${era.accentText}`}>
+                    <IconComponent className="w-6 h-6" />
                   </div>
-                  <div className="flex flex-col gap-1">
-                    <span className="font-outfit text-xs text-warm-ivory/40 tracking-wider font-semibold">{era.period}</span>
-                    <h3 className="font-playfair text-2xl font-bold text-warm-ivory group-hover:text-accent transition-colors">
+                  <div className="flex flex-col gap-0.5">
+                    <span className="font-outfit text-[10px] text-warm-ivory/40 tracking-wider font-semibold uppercase">{era.period}</span>
+                    <h3 className="font-playfair text-xl font-bold text-warm-ivory group-hover:text-accent transition-colors">
                       {era.name}
                     </h3>
                   </div>
-                  <p className="font-outfit text-sm leading-relaxed text-warm-ivory/60">
+                  <p className="font-outfit text-xs leading-relaxed text-warm-ivory/60">
                     {era.description}
                   </p>
-                  <div className="mt-auto pt-6 w-full flex items-center justify-between border-t border-accent/5">
+                  <div className="mt-auto pt-4 w-full flex items-center justify-between border-t border-accent/5">
                     <Link
                       href={`/explorer/${era.id}`}
-                      className="font-outfit text-sm font-semibold text-accent hover:text-accent-muted flex items-center gap-1.5 transition-colors group/link"
+                      className="font-outfit text-xs font-semibold text-accent hover:text-accent-muted flex items-center gap-1 transition-colors group/link"
                     >
                       Explore Hub
-                      <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
                     </Link>
                     <Link
                       href="/timeline"
-                      className="text-xs font-outfit text-warm-ivory/40 hover:text-warm-ivory transition-colors"
+                      className="text-[10px] font-outfit text-warm-ivory/40 hover:text-warm-ivory transition-colors"
                     >
-                      Timeline view
+                      Timeline
                     </Link>
                   </div>
                 </motion.div>

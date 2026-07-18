@@ -24,7 +24,7 @@ interface RelicItem {
   era: string;
   year: string;
   icon: React.ComponentType<{ className?: string }>;
-  canvasType: "laurel" | "astrolabe" | "core";
+  canvasType: "laurel" | "astrolabe" | "core" | "coin";
   description: string;
   technicalSpecs: string[];
   rarity: "Imperial" | "Scientific" | "Encrypted";
@@ -41,17 +41,44 @@ const relics: RelicItem[] = [
     year: "27 BC",
     icon: Landmark,
     canvasType: "laurel",
-    description: "Hand-forged in solid Roman gold to commemorate the ascension of Augustus Caesar. Worn during triumph marches, it symbolized the emperor's absolute authority and connection to Apollo.",
+    description: "Hand-forged in solid Roman gold to commemorate the historic ascension of Augustus Caesar. Worn during prestigious triumph marches down the Via Sacra, it symbolized the emperor's absolute civil and military authority, linking him directly to Apollo's divine protection.",
     technicalSpecs: [
-      "Material: 24k Gold Alloy",
-      "Dimensions: 22cm Diameter",
-      "Weight: 420 grams",
-      "Symbolic Authority: High"
+      "Material: 24k Gold-Copper Alloy",
+      "Dimensions: 22.4cm Diameter",
+      "Weight: 420.5 grams",
+      "Symbolic Authority: Absolute Imperial",
+      "Engraving: Detailed Laurel Leaves",
+      "Restoration Status: Fully Intact",
+      "Temporal Sector: Rome-A1",
+      "Chronological Half-Life: Stable"
     ],
     rarity: "Imperial",
     colorTheme: "border-red-800/30 hover:border-red-700/60 shadow-red-950/10",
     accentText: "text-red-400",
     badgeBg: "bg-red-950/40 text-red-400 border-red-800/30"
+  },
+  {
+    id: "coin",
+    name: "The Maurya Silver Coin",
+    era: "Ancient India",
+    year: "260 BC",
+    icon: Compass,
+    canvasType: "coin",
+    description: "An authentic punch-marked silver coin stamped during the peaceful reign of Emperor Ashoka the Great. Featuring intricate stamps of the sun, the six-armed wheel (Dharma Chakra), and sacred hills, it served as both imperial currency and a medium to propagate moral governance across the Silk Road trading posts.",
+    technicalSpecs: [
+      "Material: Punch-Marked Sterling Silver",
+      "Dimensions: 3.2cm Diameter",
+      "Weight: 3.4 grams",
+      "Symbolic Stamps: Sun, Chakra, Hills",
+      "Trade Circulation: Patliputra to Taxila",
+      "Restoration Status: Cleaned and Stamped",
+      "Temporal Sector: India-B3",
+      "Chronological Half-Life: Resonant"
+    ],
+    rarity: "Imperial",
+    colorTheme: "border-amber-700/30 hover:border-amber-600/60 shadow-amber-950/15",
+    accentText: "text-amber-500",
+    badgeBg: "bg-amber-950/40 text-amber-500 border-amber-800/30"
   },
   {
     id: "astrolabe",
@@ -60,12 +87,16 @@ const relics: RelicItem[] = [
     year: "1598 AD",
     icon: Compass,
     canvasType: "astrolabe",
-    description: "An intricate metal analog calculator used to solve problems relating to time and the position of the stars in the sky. Extensively marked with stellar constellations and geographic latitudes.",
+    description: "An incredibly complex analog astronomical calculator designed and hand-calibrated in Florence. Extensively engraved with stellar coordinates, zodiac tracks, and geographic latitudes, it allowed astronomers to compute the positions of stars, time of day, and navigate open oceans with empirical precision.",
     technicalSpecs: [
-      "Material: Gilded Brass & Bronze",
-      "Dimensions: 18cm Diameter",
-      "Weight: 890 grams",
-      "Calculative Precision: ±0.5 degrees"
+      "Material: Gilded Brass & Cast Bronze",
+      "Dimensions: 18.2cm Diameter",
+      "Weight: 890.2 grams",
+      "Calculative Precision: ±0.25 degrees",
+      "Constellation Markings: 48 Ptolemaic stars",
+      "Restoration Status: Retained Original Alidade",
+      "Temporal Sector: Florence-R5",
+      "Chronological Half-Life: Pristine"
     ],
     rarity: "Scientific",
     colorTheme: "border-accent/30 hover:border-accent/60 shadow-accent/5",
@@ -79,12 +110,16 @@ const relics: RelicItem[] = [
     year: "2099 AD",
     icon: Cpu,
     canvasType: "core",
-    description: "A decrypted memory core extracted from the central servers of the A.E.O.N. network enclaves. Contains encrypted subgrid blockchains and synthetic neurological memories.",
+    description: "A decrypted memory core extracted from the central vault of the A.E.O.N. superintelligence network. Contains encrypted subgrid logs, decentralized blockchain ledgers, and synthetic neurological memories of the first carbon-silicon hybrid netrunners.",
     technicalSpecs: [
-      "Material: Carbon-Silicon Hybrid",
+      "Material: Carbon-Silicon Hybrid Crystal",
       "Dimensions: 12cm Dodecahedron",
-      "Storage Capacity: 8.4 Yottabytes",
-      "Encryption: Quantum-Diffused"
+      "Storage Capacity: 8.42 Yottabytes",
+      "Encryption Model: Quantum-Diffused Shift",
+      "Interface Node: Optic Link Direct",
+      "Extraction Source: Subgrid Deep Enclave",
+      "Temporal Sector: Cyberpunk-Z9",
+      "Chronological Half-Life: Radioactive/Active"
     ],
     rarity: "Encrypted",
     colorTheme: "border-cyan-800/30 hover:border-cyan-700/60 shadow-cyan-950/10",

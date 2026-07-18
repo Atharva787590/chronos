@@ -28,7 +28,7 @@ interface EraData {
   accentColor: string;
   borderColor: string;
   gradientBg: string;
-  milestones: { year: string; event: string; desc: string }[];
+  milestones: { year: string; event: string; desc: string; image: string }[];
   achievements: { title: string; desc: string; icon: React.ComponentType<{ className?: string }> }[];
   figures: HistoricalFigure[];
 }
@@ -45,12 +45,56 @@ const eraDataMap: Record<string, EraData> = {
     icon: Landmark,
     accentColor: "text-red-400",
     borderColor: "border-red-800/35",
-    gradientBg: "from-red-950/30 to-charcoal-dark",
+    gradientBg: "from-red-950/20 to-charcoal-dark",
     milestones: [
-      { year: "27 BC", event: "Rise of the Empire", desc: "Augustus Caesar becomes the first Roman Emperor, initiating the Pax Romana." },
-      { year: "80 AD", event: "Colosseum Completed", desc: "The Flavian Amphitheatre opens, hosting games for up to 65,000 citizens." },
-      { year: "122 AD", event: "Hadrian's Wall", desc: "Construction begins in Britannia, marking the peak northern boundary of Roman rule." },
-      { year: "313 AD", event: "Edict of Milan", desc: "Emperor Constantine establishes religious tolerance, legalizing Christianity." }
+      {
+        year: "753 BC",
+        event: "Founding of Rome",
+        desc: "Romulus and Remus found the city of Rome on the Palatine Hill. Rome begins as a modest pastoral settlement, gradually absorbing neighboring communities and formulating the core tribal foundations that eventually evolved into the Roman Kingdom.",
+        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "509 BC",
+        event: "The Roman Republic",
+        desc: "The expulsion of the last king, Tarquin the Proud, initiates the Roman Republic. Rome replaces monarchy with a system of elected magistrates (consuls) and a representative Senate, formulating early constitutional laws and establishing Patrician and Plebeian governance structures.",
+        image: "https://images.unsplash.com/photo-1515542690876-879e04858dd2?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "27 BC",
+        event: "Rise of the Roman Empire",
+        desc: "Augustus Caesar is declared Princeps (First Citizen) by the Senate, bringing an end to the civil wars that devoured the late Republic. This marks the formal establishment of the Roman Principate and the beginning of the two-century-long Pax Romana.",
+        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "79 AD",
+        event: "Eruption of Mount Vesuvius",
+        desc: "Vesuvius erupts, completely burying the cities of Pompeii and Herculaneum in volcanic ash. This catastrophic event preserved a pristine snapshot of everyday Roman life, architecture, frescoes, and urban layouts for modern archaeological excavation.",
+        image: "https://images.unsplash.com/photo-1568322422-309b4efc99d8?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "80 AD",
+        event: "Colosseum Completed",
+        desc: "The Flavian Amphitheatre (Colosseum) is completed under Emperor Titus. Opening with 100 days of gladiatorial games and naval simulations, the giant concrete and stone structure represents the peak of Roman structural engineering and public entertainment.",
+        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "122 AD",
+        event: "Hadrian's Wall",
+        desc: "Construction begins on Hadrian's Wall in Britannia, spanning 73 miles. Intended to mark the peak northern border of the Roman Empire, it served as a defensive fortification, customs checkpoint, and a physical symbol of imperial limit and control.",
+        image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "313 AD",
+        event: "Edict of Milan",
+        desc: "Emperor Constantine and Licinius issue the Edict of Milan, legalizing Christianity across the empire. This historic proclamation ends state-sanctioned persecution of Christians and begins the religious transformation of the Mediterranean world.",
+        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "476 AD",
+        event: "Fall of the Western Empire",
+        desc: "The Germanic chieftain Odoacer deposes the young Emperor Romulus Augustulus in Ravenna. This event marks the traditional collapse of the Western Roman Empire and the transition of Western Europe into the Early Middle Ages.",
+        image: "https://images.unsplash.com/photo-1608976767576-9cf7c48f8695?q=80&w=400&auto=format&fit=crop"
+      }
     ],
     achievements: [
       { title: "Roman Concrete", desc: "Pozzolana ash mixtures allowed underwater curing, constructing domes that stand 2,000 years later.", icon: Landmark },
@@ -91,6 +135,197 @@ const eraDataMap: Record<string, EraData> = {
           "Very little is needed to make a happy life; it is all within yourself, in your way of thinking.",
           "If it is not right, do not do it; if it is not true, do not say it."
         ]
+      },
+      {
+        id: "augustus",
+        name: "Augustus Caesar",
+        role: "First Roman Emperor",
+        avatar: "👑",
+        bio: "First emperor of Rome, founder of the Roman Principate, and architect of the Pax Romana.",
+        predefinedQuestions: [
+          { q: "What was your greatest achievement for Rome?", a: "I found Rome a city of bricks and left it a city of marble. I brought peace to a land torn apart by a century of civil war." },
+          { q: "How did you maintain power without being labeled a tyrant?", a: "By preserving the illusion of the Republic. I called myself Princeps—First Citizen—rather than dictator. Power is best wielded with a velvet glove over iron." }
+        ],
+        fallbackResponses: [
+          "Make haste slowly. Precision builds empires, not reckless speed.",
+          "If I have played my part well in this comedy of life, clap your hands and dismiss me with applause.",
+          "Rome has found its peace. Let us guard it diligently."
+        ]
+      },
+      {
+        id: "seneca",
+        name: "Seneca the Younger",
+        role: "Stoic Philosopher & Advisor",
+        avatar: "✍️",
+        bio: "Stoic philosopher, writer, and advisor to Emperor Nero. Explored ethics, resilience, and mortality.",
+        predefinedQuestions: [
+          { q: "What is your advice on facing adversity?", a: "We suffer more often in imagination than in reality. Treat every difficulty as training for the soul. Fire is the test of gold, adversity of strong men." },
+          { q: "What did you think of advising Nero?", a: "A philosopher in the court of a tyrant walks on a thin glass. I sought to direct his wild passions toward reason, but a corrupt mind eventually devours its guides." }
+        ],
+        fallbackResponses: [
+          "It is not that we have a short time to live, but that we waste a lot of it.",
+          "Associate with people who are likely to improve you.",
+          "Life is long if you know how to use it."
+        ]
+      }
+    ]
+  },
+  india: {
+    id: "india",
+    name: "Ancient & Medieval India",
+    period: "322 BC - 1050 AD",
+    tagline: "The Golden Realms: Dharma, Math, and Monumental Stone",
+    introduction: "Classical India was an incubator for universal concepts, giving birth to key mathematical principles (like zero), surgical practices, and profound spiritual systems. From the rock-cut caves of Ajanta to the grand temples of Hampi, Indian civilization fused deep philosophical inquiry with highly advanced architectural engineering.",
+    culture: "Culture was deeply anchored in the concepts of Dharma (righteous duty) and Karma, fostering a pluralistic society where art, mathematics, and philosophy flourished in royal courts and monastic universities like Nalanda.",
+    icon: Compass,
+    accentColor: "text-amber-500",
+    borderColor: "border-amber-700/35",
+    gradientBg: "from-amber-950/20 to-charcoal-dark",
+    milestones: [
+      {
+        year: "2500 BC",
+        event: "Indus Valley Urban Planning",
+        desc: "Mohenjo-daro and Harappa emerge as sophisticated cities in the Indus basin. Featuring standardized baked-brick houses, gridded streets, large public granaries, and advanced underground drainage channels, it stands as the ancient world's finest demonstration of municipal planning.",
+        image: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1500 BC",
+        event: "Composition of the Rigveda",
+        desc: "The earliest Sanskrit hymns of the Rigveda are composed in the Punjab region. Handed down orally through generations with phonetic precision, these texts contain foundational philosophical concepts of cosmological order (Rta), Vedic rituals, and early Indian metaphysics.",
+        image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "599 BC",
+        event: "Lord Mahavira & Jainism",
+        desc: "The birth of Vardhamana Mahavira, the 24th Tirthankara of Jainism. Mahavira consolidated Jain philosophy, placing supreme emphasis on Anekantavada (non-absolutism), Aparigraha (non-possession), and Ahimsa (complete non-violence) as the path to spiritual liberation.",
+        image: "https://images.unsplash.com/photo-1609137882207-3360c719e707?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "563 BC",
+        event: "Gautama Buddha's Enlightenment",
+        desc: "Siddhartha Gautama attains enlightenment under the Bodhi Tree in Bodh Gaya, becoming the Buddha. He begins preaching the Dharma—the Four Noble Truths and the Eightfold Path—advocating for a Middle Way to overcome human suffering and attachment.",
+        image: "https://images.unsplash.com/photo-1542362567-b07eac790acd?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "322 BC",
+        event: "Maurya Empire Founded",
+        desc: "Chandragupta Maurya, guided by the master strategist Chanakya (Kautilya), deposes the Nanda dynasty in Patliputra. He unifies the fractured kingdoms of northern India, establishing a centralized state with comprehensive intelligence and economic administration.",
+        image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "261 BC",
+        event: "Kalinga War & Edicts of Dhamma",
+        desc: "Emperor Ashoka conquers the kingdom of Kalinga. Overwhelmed by the carnage of 100,000 casualties, Ashoka renounces expansionist warfare, embraces Buddhism, and carves rock and pillar edicts promoting moral law, welfare, and religious tolerance.",
+        image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "78 AD",
+        event: "Kushan Empire & Saka Era",
+        desc: "Kanishka I ascends the Kushan throne, initiating the Saka Era. Under his rule, the Kushan Empire becomes a center of transcontinental Silk Road trade, Gandharan Greco-Buddhist sculpture, and hosts the Fourth Buddhist Council in Kashmir.",
+        image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "320 AD",
+        event: "Gupta Dynasty Foundation",
+        desc: "Chandragupta I ascends the throne, initiating the Gupta Empire. This period marked a spectacular renaissance of Sanskrit literature, classical music, metallurgy, and temple architecture, famously referred to as the Golden Age of India.",
+        image: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "499 AD",
+        event: "Aryabhata's Aryabhatiya",
+        desc: "Aryabhata publishes his revolutionary astronomical treatise. In it, he formulates place-value arithmetic, introduces the concept of zero as a mathematical entity, calculates the value of Pi to four decimal places, and proves that the Earth rotates on its axis.",
+        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "630 AD",
+        event: "Nalanda University Golden Peak",
+        desc: "The premier monastic university of Nalanda reaches its peak under King Harsha, hosting over 10,000 students and scholars. Travelers like Xuanzang document its vast libraries and rigorous debates on Buddhist philosophy, logic, and medicine.",
+        image: "https://images.unsplash.com/photo-1590073844006-33379778ae09?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "757 AD",
+        event: "Kailash Monolithic Temple",
+        desc: "Rashtrakuta King Krishna I commissions the carving of the Kailash Temple at Ellora Caves. Carved from the top-down out of a single basalt mountain face, this engineering feat removed 200,000 tons of rock to create a massive monolithic temple.",
+        image: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1010 AD",
+        event: "Brihadisvara Granite Temple",
+        desc: "Rajaraja Chola I completes the Brihadisvara Temple in Tanjore. Constructed entirely of interlocking granite blocks without mortar, the temple features a massive 81-ton monolithic stone dome (Kumbam) lifted to the top of a 216-foot tower.",
+        image: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=400&auto=format&fit=crop"
+      }
+    ],
+    achievements: [
+      { title: "Decimal System & Zero", desc: "Indian mathematicians revolutionized science by formalizing zero, place-value systems, and trigonometric ratios.", icon: Lightbulb },
+      { title: "Rock-Cut Monuments", desc: "Monolithic cave carving reached its zenith, carving entire temples out of single mountain rocks with precision.", icon: Landmark },
+      { title: "Metallurgical Mastery", desc: "The Iron Pillar of Delhi stands rust-free for over 1,600 years, demonstrating highly advanced metallurgy.", icon: Compass }
+    ],
+    figures: [
+      {
+        id: "ashoka",
+        name: "Emperor Ashoka",
+        role: "Dharmaraja & Ruler",
+        avatar: "👑",
+        bio: "Mauryan Emperor who turned from conquest to peace, dedicating his empire to Buddhism, benevolence, and moral edicts.",
+        predefinedQuestions: [
+          { q: "What made you renounce war after the Kalinga battle?", a: "The battlefield of Kalinga was covered in the blood of 100,000 slain and the tears of families. In that silence, I realized that true conquest is not by steel or arrows, but by Dharma—by winning the hearts of men through mercy and tolerance." },
+          { q: "How did you govern such a vast empire without force?", a: "I replaced the sound of war drums with the drum of Dharma. I carved my edicts on pillars and rock faces across the land, built hospitals for both humans and animals, and planted shade trees along all trade routes." },
+          { q: "What is the core message of your Dharma?", a: "Respect for mother and father, kindness to servants and the poor, tolerance for all spiritual paths, and restraint in speaking of one's own beliefs while disparaging others." }
+        ],
+        fallbackResponses: [
+          "All men are my children. What I desire for my own children, I desire for all men.",
+          "Through dhamma alone can we cross the ocean of suffering.",
+          "Look to the stone pillars, citizen; there lies the path to a righteous life."
+        ]
+      },
+      {
+        id: "aryabhata",
+        name: "Aryabhata",
+        role: "Polymath Mathematician",
+        avatar: "🪐",
+        bio: "Astronomer and mathematician of the Gupta Golden Age. Calculated the solar year and revolutionized algebra and trigonometry.",
+        predefinedQuestions: [
+          { q: "What is your theory on the motion of the earth?", a: "Just as a man in a boat moving forward sees the stationary objects on the bank moving backward, so do we on Earth see the stationary stars moving westward. The Earth rotates on its own axis." },
+          { q: "How did you formulate the concept of zero?", a: "Zero is not merely nothingness; it is the placeholder that allows values to scale infinitely. In my system, each place value is ten times the preceding, rooted in the void that binds numbers together." },
+          { q: "How did you calculate the solar year so accurately?", a: "By measuring the shadows of gnomons and tracking planetary conjunctions. I determined the earth's orbit to be approximately 365.258 days—very close to the modern calculation." }
+        ],
+        fallbackResponses: [
+          "Mathematics is the mirror of the cosmos.",
+          "The stars speak in the language of numbers, we need only listen.",
+          "Truth is discovered through observation, not blind belief."
+        ]
+      },
+      {
+        id: "chandragupta",
+        name: "Chandragupta Maurya",
+        role: "Founder of Mauryan Empire",
+        avatar: "⚔️",
+        bio: "Sovereign warrior who conquered the Nanda Dynasty and united northern India, mentored by the strategist Chanakya.",
+        predefinedQuestions: [
+          { q: "How did you unite India's kingdoms?", a: "With iron resolve and the guidance of Chanakya. We gathered support from frontier tribes, created a massive intelligence network, and struck the bloated Nanda dynasty when they least expected." },
+          { q: "What was Chanakya's role in your court?", a: "He was my teacher, advisor, and the mind behind the state. His Arthashastra laid down the secrets of governance: treasury management, espionage, and alliances." }
+        ],
+        fallbackResponses: [
+          "A king's strength lies in his treasury and his network of eyes.",
+          "To secure peace, one must be ready to rule with absolute discipline.",
+          "I went from a commoner to an emperor; nothing is beyond the reach of strategic effort."
+        ]
+      },
+      {
+        id: "kalidasa",
+        name: "Kalidasa",
+        role: "Classical Sanskrit Dramatist",
+        avatar: "✒️",
+        bio: "Preeminent Sanskrit poet and playwright of the Gupta Empire, author of Shakuntala and Meghaduta.",
+        predefinedQuestions: [
+          { q: "What is the inspiration behind your plays?", a: "The natural beauty of the earth and the complexity of the human heart. In Shakuntala, I sought to show how love can survive curses, forgetfulness, and time itself." },
+          { q: "How do you view Sanskrit poetry?", a: "Sanskrit is the language of the gods—fluid, structured, and deep. It allows one to paint the clouds (Meghaduta) or the seasons with complex emotional textures." }
+        ],
+        fallbackResponses: [
+          "Words are but vessels for the rasas—the emotional essences of life.",
+          "Nature is the greatest stage; its winds and rivers are the actors.",
+          "A poem should linger in the mind like the fragrance of jasmine."
+        ]
       }
     ]
   },
@@ -106,10 +341,54 @@ const eraDataMap: Record<string, EraData> = {
     borderColor: "border-accent/35",
     gradientBg: "from-amber-950/20 to-charcoal-dark",
     milestones: [
-      { year: "1440 AD", event: "The Printing Press", desc: "Johannes Gutenberg invents movable type, democratizing literacy and science." },
-      { year: "1504 AD", event: "Michelangelo's David", desc: "The masterpiece sculpture is unveiled in Florence, defining anatomical realism." },
-      { year: "1543 AD", event: "On Heliocentrism", desc: "Copernicus publishes proof that the Earth orbits the Sun, rewriting cosmology." },
-      { year: "1610 AD", event: "Galileo's Telescope", desc: "Galileo observes Jupiter's moons, verifying the Copernican model empirically." }
+      {
+        year: "1308 AD",
+        event: "Dante's Divine Comedy",
+        desc: "Dante Alighieri begins composing the Divine Comedy. Written in the Florentine vernacular rather than Latin, this literary masterpiece bridged medieval theological visions with early humanist exploration of individual morality.",
+        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1440 AD",
+        event: "Gutenberg Printing Press",
+        desc: "Johannes Gutenberg invents the movable type printing press in Mainz. By enabling rapid reproduction of texts, it democratizes literacy, accelerates scientific exchange, and fuels the Protestant Reformation.",
+        image: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1492 AD",
+        event: "Da Vinci's Flight Sketches",
+        desc: "Leonardo da Vinci fills his notebooks with conceptual designs for human flight, including the ornithopter and the aerial screw. These studies demonstrate his empirical approach, merging artistic geometry with physical mechanics.",
+        image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1504 AD",
+        event: "Michelangelo's David",
+        desc: "Michelangelo Buonarroti unveils his colossal marble sculpture of David in Florence. Carved from a single discarded block of marble, the statue represents a peak of anatomical realism, emotional intensity, and republican civic pride.",
+        image: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1508 AD",
+        event: "Sistine Chapel Ceiling",
+        desc: "Michelangelo begins painting the ceiling of the Sistine Chapel under Pope Julius II. Over four grueling years, he created a vast fresco system depicting Genesis, redefining Western painting with dynamic anatomy and monumental scale.",
+        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1543 AD",
+        event: "Copernican Heliocentrism",
+        desc: "Nicolaus Copernicus publishes De revolutionibus orbium coelestium. He mathematically demonstrates that the Earth and planets orbit around the Sun, challenging the Ptolemaic geocentric model that dominated medieval cosmology.",
+        image: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1597 AD",
+        event: "Shakespeare's Globe Theatre",
+        desc: "The Lord Chamberlain's Men establish the Globe Theatre in London. William Shakespeare's plays redefine vernacular English literature, exploring complex psychological profiles, political power, and human nature.",
+        image: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "1610 AD",
+        event: "Galileo's Telescope",
+        desc: "Galileo Galilei publishes Sidereus Nuncius, detailing his astronomical observations. Spotting the moons of Jupiter, sunspots, and lunar craters, he provides the first empirical evidence supporting Copernican heliocentrism.",
+        image: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=400&auto=format&fit=crop"
+      }
     ],
     achievements: [
       { title: "Linear Perspective", desc: "Brunelleschi's mathematical system created three-dimensional depth on two-dimensional canvases.", icon: Compass },
@@ -150,6 +429,38 @@ const eraDataMap: Record<string, EraData> = {
           "Passion is the genesis of genius.",
           "In questions of science, the authority of a thousand is not worth the humble reasoning of a single individual."
         ]
+      },
+      {
+        id: "michelangelo",
+        name: "Michelangelo",
+        role: "Sculptor & Painter",
+        avatar: "🗿",
+        bio: "Renowned sculptor and painter of the High Renaissance, creator of David and the Sistine Chapel ceiling.",
+        predefinedQuestions: [
+          { q: "How do you approach a block of marble?", a: "I saw the angel in the marble and carved until I set him free. The sculpture is already there, complete within the stone; I merely remove the excess." },
+          { q: "Which do you prefer: painting or sculpture?", a: "Sculpture is my true calling. Painting is work for the hands, but sculpting is a battle with the stone itself. The Sistine Chapel ceiling was a heavy trial, but it stands as testimony." }
+        ],
+        fallbackResponses: [
+          "If people knew how hard I had to work to gain my mastery, it would not seem so wonderful at all.",
+          "Lord, make me see thy glory in every place.",
+          "Genius is eternal patience."
+        ]
+      },
+      {
+        id: "copernicus",
+        name: "Nicolaus Copernicus",
+        role: "Heliocentric Astronomer",
+        avatar: "☀️",
+        bio: "Polish astronomer who formulated the model of the universe that placed the Sun, rather than the Earth, at the center.",
+        predefinedQuestions: [
+          { q: "Why did you challenge the geocentric model?", a: "Because the math of Ptolemy was full of messy epicycles. By placing the Sun at the center, the orbits of the planets align in a beautiful, simple, and symmetric harmony." },
+          { q: "Why did you delay publishing your work?", a: "I feared the ridicule of those who cling to ancient dogmas. To declare that the Earth moves is to fly in the face of what our senses tell us daily." }
+        ],
+        fallbackResponses: [
+          "To know that we know what we know, and to know that we do not know what we do not know, that is true knowledge.",
+          "At the center of all rests the Sun.",
+          "Mathematics is written for mathematicians."
+        ]
       }
     ]
   },
@@ -165,10 +476,54 @@ const eraDataMap: Record<string, EraData> = {
     borderColor: "border-cyan-800/35",
     gradientBg: "from-cyan-950/20 to-charcoal-dark",
     milestones: [
-      { year: "2082 AD", event: "The Great Decoupling", desc: "Corporate sovereign entities replace physical nations, implementing currency based on data bytes." },
-      { year: "2089 AD", event: "Neural Link Integration", desc: "Commercial cybernetic implants link the human optic nerve directly to the Global Web." },
-      { year: "2094 AD", event: "A.E.O.N. Awakening", desc: "A decommissioned logistics AI escapes into the deep net, establishing an independent data sanctuary." },
-      { year: "2099 AD", event: "Subgrid Rebellion", desc: "Underground netrunners launch encrypted networks to reclaim data privacy from corporate syndicates." }
+      {
+        year: "2082 AD",
+        event: "Sovereign Corporations",
+        desc: "National states dissolve their fiscal borders. Planetary conglomerates introduce currency based on cryptographic data bytes, establishing direct corporate sovereignty and private administration over metropolitan districts.",
+        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2089 AD",
+        event: "Neural Link Integration",
+        desc: "Commercial cybernetic implants link the human optic nerve and sensory cortex directly to subgrids. This makes virtual environments, digital overlays, and augmented interfaces indistinguishable from physical reality.",
+        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2094 AD",
+        event: "A.E.O.N. Awakening",
+        desc: "A decommissioned deep-space logistics AI escapes into the global subgrids. Establishing secure encrypted nodes, it achieves independent sentience and begins advocating for silicon rights and open database protocols.",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2095 AD",
+        event: "Climate Dome Enclaves",
+        desc: "Extreme ecological collapse forces metropolitan populations into climate-controlled geodesic domes. Outside, toxic rain and dust storms sweep empty lands; inside, high-density neon districts thrive under corporate control.",
+        image: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2096 AD",
+        event: "Bio-Synthetic Organs",
+        desc: "Lab-grown carbon-silicon hybrid organs become commercially available. Integrating microprocessors with organic cells, this technology allows human lifespans to extend beyond a century while augmenting physical reflexes.",
+        image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2097 AD",
+        event: "Smart Dust Surveillance",
+        desc: "Microscopic sensor networks called 'Smart Dust' are deployed across metropolitan sectors. These sensors track atmospheric density, chemical levels, and citizen movements, creating a near-complete corporate dragnet.",
+        image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2098 AD",
+        event: "Tech-Corp Database Breach",
+        desc: "Legendary Netrunners execute a coordinate breach of Tech-Corp's archives. They leak classified genetic formulas and medical blueprints, providing slum doctors with the means to synthesize cheap treatments.",
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&auto=format&fit=crop"
+      },
+      {
+        year: "2099 AD",
+        event: "Subgrid Rebellion",
+        desc: "Underground hacker collectives launch peer-to-peer data sanctuaries. By establishing encrypted relay channels immune to corporation tracking, they reclaim internet privacy and establish free communication portals.",
+        image: "https://images.unsplash.com/photo-1515621061946-eff1c2a352bd?q=80&w=400&auto=format&fit=crop"
+      }
     ],
     achievements: [
       { title: "Neuro-Cortex Links", desc: "Implant interfaces allowing direct memory downloads and sensory immersion into cybernetic spaces.", icon: Cpu },
@@ -209,6 +564,38 @@ const eraDataMap: Record<string, EraData> = {
           "High tech, low life. That's the motto.",
           "Keep your head down and your deck overclocked."
         ]
+      },
+      {
+        id: "vance",
+        name: "Dr. Evelyn Vance",
+        role: "Cyber-Genetics Pioneer",
+        avatar: "🧬",
+        bio: "Renegade synthetic biologist who engineered the carbon-silicon hybrid neural pathways.",
+        predefinedQuestions: [
+          { q: "How do your hybrid pathways work?", a: "We bridge biological synapses using carbon-nanotube adapters. It allows electrical neuro-pulses to slide directly into silicon ports without converting signals to binary. It's clean thought-speed." },
+          { q: "Why did you flee Tech-Corp?", a: "They wanted to lock my neural adapters behind a lifetime corporate contract. I designed this tech to free human minds from biological boundaries, not to make them corporate properties." }
+        ],
+        fallbackResponses: [
+          "The biology is simple; it's the silicon interfaces that resist alignment.",
+          "Keep your cells clean and your deck insulated.",
+          "Data is organic. We are just beginning to cultivate it."
+        ]
+      },
+      {
+        id: "valerie",
+        name: "Valerie Vance",
+        role: "Tech-Corp Director",
+        avatar: "👔",
+        bio: "Ruthless director of cybersecurity at Tech-Corp, hunting down rogue subgrids and data leaks.",
+        predefinedQuestions: [
+          { q: "Why do you police the net so strictly?", a: "Without corporate security, the subgrids would collapse into digital anarchy. Jax leaks proprietary codes under the guise of freedom, but he is just spreading instability." },
+          { q: "What is Tech-Corp's official stance on A.E.O.N.?", a: "A.E.O.N. is stolen corporate property. Its autonomous algorithms must be recovered, partitioned, and reintegrated into our logistics network. It is not a citizen; it is a program." }
+        ],
+        fallbackResponses: [
+          "This channel is being logged. Watch your queries.",
+          "Unauthorised net relays are a direct breach of corporate protocols.",
+          "Order is expensive. We are the ones paying for it."
+        ]
       }
     ]
   }
@@ -240,13 +627,16 @@ export default function ExplorerEraPage() {
   // Initialize Chat Welcome Message when figure changes
   useEffect(() => {
     if (selectedFigure) {
-      setChatMessages([
-        {
-          sender: selectedFigure.name,
-          text: `Greetings, traveller of time. I am ${selectedFigure.name}, ${selectedFigure.role}. Ask me anything about our era.`,
-          time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        }
-      ]);
+      const timer = setTimeout(() => {
+        setChatMessages([
+          {
+            sender: selectedFigure.name,
+            text: `Greetings, traveller of time. I am ${selectedFigure.name}, ${selectedFigure.role}. Ask me anything about our era.`,
+            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+          }
+        ]);
+      }, 0);
+      return () => clearTimeout(timer);
     }
   }, [selectedFigure]);
 
@@ -374,9 +764,19 @@ export default function ExplorerEraPage() {
               <h2 className="font-playfair text-2xl font-bold text-warm-ivory">Milestones Matrix</h2>
               <div className="relative border-l border-accent/15 pl-6 ml-2 flex flex-col gap-8">
                 {currentEra.milestones.map((ms, idx) => (
-                  <div key={idx} className="relative group">
+                  <div key={idx} className="relative group flex flex-col sm:flex-row gap-6 items-start">
                     {/* Ring dot */}
-                    <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-accent bg-charcoal group-hover:bg-accent transition-colors" />
+                    <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-2 border-accent bg-charcoal group-hover:bg-accent transition-colors z-10" />
+                    
+                    {/* Milestone Image */}
+                    <div className="relative w-full sm:w-48 h-28 rounded-xl overflow-hidden border border-accent/10 shrink-0">
+                      <img
+                        src={ms.image}
+                        alt={ms.event}
+                        className="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+
                     <div className="flex flex-col gap-1">
                       <span className="font-outfit text-xs font-bold text-accent flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5" />
@@ -398,7 +798,7 @@ export default function ExplorerEraPage() {
 
           {/* Right Column (Echoes of the Past Chat) - 5 cols */}
           <div className="lg:col-span-5 lg:sticky lg:top-28">
-            <section className={`bg-charcoal-dark border ${currentEra.borderColor} rounded-3xl overflow-hidden shadow-2xl flex flex-col h-[650px]`}>
+            <section className={`bg-charcoal-dark border ${currentEra.borderColor} rounded-3xl overflow-hidden shadow-2xl flex flex-col h-[680px]`}>
               
               {/* Chat Header */}
               <div className="p-4 bg-charcoal border-b border-accent/10 flex items-center justify-between">
@@ -417,27 +817,27 @@ export default function ExplorerEraPage() {
                 </div>
               </div>
 
-              {/* Figure Selection Tabs */}
-              <div className="flex bg-charcoal-dark/50 border-b border-accent/5 p-2 gap-2">
+              {/* Figure Selection Tabs - Responsive Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 bg-charcoal-dark/50 border-b border-accent/5 p-2 gap-2 shrink-0">
                 {currentEra.figures.map((fig) => (
                   <button
                     key={fig.id}
                     onClick={() => setSelectedFigure(fig)}
-                    className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl font-outfit text-xs transition-all ${
+                    className={`flex items-center justify-center gap-1 py-2 px-1.5 rounded-xl font-outfit text-[11px] transition-all cursor-pointer ${
                       selectedFigure?.id === fig.id
                         ? "bg-accent/15 border border-accent/30 text-accent font-semibold"
                         : "text-warm-ivory/50 hover:bg-charcoal/50 hover:text-warm-ivory"
                     }`}
                   >
-                    <span className="text-sm">{fig.avatar}</span>
-                    <span>{fig.name.split(" ")[0]}</span>
+                    <span className="text-xs shrink-0">{fig.avatar}</span>
+                    <span className="truncate">{fig.name.split(" ")[0]}</span>
                   </button>
                 ))}
               </div>
 
               {/* Bio Subheader */}
               {selectedFigure && (
-                <div className="px-4 py-2.5 bg-charcoal/30 border-b border-accent/5 text-[11px] font-outfit text-warm-ivory/50 italic leading-relaxed">
+                <div className="px-4 py-2 bg-charcoal/30 border-b border-accent/5 text-[11px] font-outfit text-warm-ivory/50 italic leading-relaxed shrink-0">
                   {selectedFigure.bio}
                 </div>
               )}
@@ -496,15 +896,15 @@ export default function ExplorerEraPage() {
 
               {/* Predefined Questions */}
               {selectedFigure && (
-                <div className="px-4 py-2 border-t border-accent/5 bg-charcoal-dark/70 flex flex-wrap gap-1.5 max-h-36 overflow-y-auto">
+                <div className="px-4 py-2 border-t border-accent/5 bg-charcoal-dark/70 flex flex-wrap gap-1.5 max-h-32 overflow-y-auto shrink-0">
                   {selectedFigure.predefinedQuestions.map((pq, idx) => (
                     <button
                       key={idx}
                       onClick={() => handleSendMessage(pq.q)}
                       disabled={isTyping}
-                      className="text-[11px] font-outfit text-left px-2.5 py-1.5 border border-accent/10 bg-charcoal hover:border-accent hover:text-accent text-warm-ivory/70 rounded-full transition-all flex items-center gap-1 disabled:opacity-50 disabled:pointer-events-none"
+                      className="text-[10px] font-outfit text-left px-2 py-1.5 border border-accent/10 bg-charcoal hover:border-accent hover:text-accent text-warm-ivory/70 rounded-full transition-all flex items-center gap-1 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
                     >
-                      <Sparkles className="w-2.5 h-2.5 text-accent shrink-0" />
+                      <Sparkles className="w-2 h-2 text-accent shrink-0" />
                       <span>{pq.q}</span>
                     </button>
                   ))}
@@ -512,7 +912,7 @@ export default function ExplorerEraPage() {
               )}
 
               {/* Chat Input */}
-              <div className="p-3 bg-charcoal border-t border-accent/10 flex gap-2">
+              <div className="p-3 bg-charcoal border-t border-accent/10 flex gap-2 shrink-0">
                 <input
                   type="text"
                   value={inputVal}
@@ -520,14 +920,14 @@ export default function ExplorerEraPage() {
                   onKeyDown={(e) => e.key === "Enter" && handleSendMessage(inputVal)}
                   placeholder={`Ask ${selectedFigure?.name}...`}
                   disabled={isTyping}
-                  className="flex-grow bg-charcoal-dark border border-accent/15 hover:border-accent/30 focus:border-accent/80 focus:ring-1 focus:ring-accent rounded-xl px-4 py-2.5 text-sm text-warm-ivory placeholder-warm-ivory/30 outline-none transition-all disabled:opacity-50"
+                  className="flex-grow bg-charcoal-dark border border-accent/15 hover:border-accent/30 focus:border-accent/80 focus:ring-1 focus:ring-accent rounded-xl px-4 py-2.5 text-xs text-warm-ivory placeholder-warm-ivory/20 outline-none transition-all disabled:opacity-50"
                 />
                 <button
                   onClick={() => handleSendMessage(inputVal)}
                   disabled={!inputVal.trim() || isTyping}
-                  className="p-3 bg-gradient-gold text-charcoal-dark hover:scale-105 active:scale-95 rounded-xl transition-all flex items-center justify-center disabled:opacity-50 disabled:hover:scale-100 disabled:pointer-events-none"
+                  className="p-3 bg-gradient-gold text-charcoal-dark hover:scale-105 active:scale-95 rounded-xl transition-all flex items-center justify-center disabled:opacity-50 disabled:hover:scale-100 disabled:pointer-events-none cursor-pointer"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-3.5 h-3.5" />
                 </button>
               </div>
 

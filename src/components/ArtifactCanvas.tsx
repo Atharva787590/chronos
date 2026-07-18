@@ -6,7 +6,7 @@ import { OrbitControls, Float } from "@react-three/drei";
 import * as THREE from "three";
 
 interface ArtifactProps {
-  type: "laurel" | "astrolabe" | "core";
+  type: "laurel" | "astrolabe" | "core" | "coin";
 }
 
 function ArtifactModel({ type }: ArtifactProps) {
@@ -40,6 +40,12 @@ function ArtifactModel({ type }: ArtifactProps) {
       if (groupRef.current) {
         groupRef.current.rotation.x = time * 0.5 * multiplier;
         groupRef.current.rotation.z = time * 0.3 * multiplier;
+      }
+    } else if (type === "coin") {
+      // Coin rotation: spin on its y axis and tilt on x axis
+      if (groupRef.current) {
+        groupRef.current.rotation.y = time * 0.3 * multiplier;
+        groupRef.current.rotation.x = 0.4 + Math.sin(time * 0.5) * 0.1;
       }
     }
   });
@@ -191,6 +197,57 @@ function ArtifactModel({ type }: ArtifactProps) {
     );
   }
 
+  if (type === "coin") {
+    return (
+      <group ref={groupRef} onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)}>
+        {/* Main Coin Disc */}
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <cylinderGeometry args={[1, 1, 0.08, 32]} />
+          <meshStandardMaterial color="#D97706" metalness={0.8} roughness={0.3} />
+        </mesh>
+        
+        {/* Raised Rim Front */}
+        <mesh position={[0, 0, 0.045]}>
+          <torusGeometry args={[0.95, 0.03, 16, 100]} />
+          <meshStandardMaterial color="#EA580C" metalness={0.9} roughness={0.25} />
+        </mesh>
+
+        {/* Raised Rim Back */}
+        <mesh position={[0, 0, -0.045]}>
+          <torusGeometry args={[0.95, 0.03, 16, 100]} />
+          <meshStandardMaterial color="#EA580C" metalness={0.9} roughness={0.25} />
+        </mesh>
+
+        {/* Dharma Chakra Center Hub */}
+        <mesh position={[0, 0, 0.04]} rotation={[Math.PI / 2, 0, 0]}>
+          <cylinderGeometry args={[0.18, 0.18, 0.03, 16]} />
+          <meshStandardMaterial color="#D97706" metalness={0.9} roughness={0.2} />
+        </mesh>
+
+        {/* Dharma Chakra Spokes (8 spokes) */}
+        {[...Array(8)].map((_, i) => {
+          const angle = (i * Math.PI) / 4;
+          return (
+            <mesh
+              key={i}
+              position={[0, 0, 0.04]}
+              rotation={[0, 0, angle]}
+            >
+              <boxGeometry args={[0.04, 0.8, 0.02]} />
+              <meshStandardMaterial color="#EA580C" metalness={0.9} roughness={0.2} />
+            </mesh>
+          );
+        })}
+
+        {/* Ashoka Lion Silhouette Representation Center */}
+        <mesh position={[0, 0, 0.055]}>
+          <octahedronGeometry args={[0.1]} />
+          <meshStandardMaterial color="#FAF8F5" metalness={0.7} roughness={0.2} />
+        </mesh>
+      </group>
+    );
+  }
+
   return null;
 }
 
@@ -202,9 +259,12 @@ export default function ArtifactCanvas({ type }: ArtifactProps) {
         <directionalLight position={[3, 5, 3]} intensity={1.5} color="#FDFBF7" />
         <pointLight position={[-3, -3, -3]} intensity={0.5} color="#D4AF37" />
         
-        {/* Selective lighting to enhance cyberpunk glow */}
+        {/* Selective lighting to enhance cyberpunk and ancient gold glow */}
         {type === "core" && (
           <pointLight position={[0, 0, 0]} intensity={2.5} color="#22d3ee" distance={4} />
+        )}
+        {type === "coin" && (
+          <pointLight position={[0, 0, 0.8]} intensity={1.8} color="#EA580C" distance={3} />
         )}
 
         <Float speed={2} rotationIntensity={0.15} floatIntensity={0.3}>
@@ -216,3 +276,4 @@ export default function ArtifactCanvas({ type }: ArtifactProps) {
     </div>
   );
 }
+

@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Outfit } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import ChronoGuide from "@/components/ChronoGuide";
+import Link from "next/link";
 import "./globals.css";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "700", "900"],
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Chronos: Interactive Spatial History Experience",
@@ -27,7 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${outfit.variable} h-full antialiased`}>
+    <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+      </head>
       <body className="min-h-full flex flex-col bg-charcoal text-warm-ivory selection:bg-accent selection:text-charcoal-dark overflow-x-hidden">
         {/* Navbar */}
         <Navbar />
@@ -36,6 +30,9 @@ export default function RootLayout({
         <main className="flex-grow pt-24 min-h-screen">
           {children}
         </main>
+
+        {/* Global AI Chrono-Guide Widget */}
+        <ChronoGuide />
 
         {/* Footer */}
         <footer className="border-t border-accent/10 py-12 px-4 md:px-8 bg-charcoal-dark/40 backdrop-blur-sm mt-auto">
@@ -47,9 +44,9 @@ export default function RootLayout({
               </p>
             </div>
             <div className="flex gap-8 text-sm font-outfit">
-              <a href="/timeline" className="text-warm-ivory/60 hover:text-accent transition-colors">Chronology</a>
-              <a href="/explorer/rome" className="text-warm-ivory/60 hover:text-accent transition-colors">Explorer</a>
-              <a href="/gallery" className="text-warm-ivory/60 hover:text-accent transition-colors">Museum</a>
+              <Link href="/timeline" className="text-warm-ivory/60 hover:text-accent transition-colors">Chronology</Link>
+              <Link href="/explorer/rome" className="text-warm-ivory/60 hover:text-accent transition-colors">Explorer</Link>
+              <Link href="/gallery" className="text-warm-ivory/60 hover:text-accent transition-colors">Museum</Link>
             </div>
             <div className="font-outfit text-xs text-warm-ivory/40">
               © {new Date().getFullYear()} Chronos. Built with Next.js & Three.js.

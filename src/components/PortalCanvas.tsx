@@ -109,6 +109,17 @@ function Hourglass() {
   );
 }
 
+const count = 100;
+const backgroundPositions = (() => {
+  const arr = new Float32Array(count * 3);
+  for (let i = 0; i < count; i++) {
+    arr[i * 3] = (Math.random() - 0.5) * 15;
+    arr[i * 3 + 1] = (Math.random() - 0.5) * 15;
+    arr[i * 3 + 2] = (Math.random() - 0.5) * 15;
+  }
+  return arr;
+})();
+
 function FloatingBackground() {
   const pointsRef = useRef<THREE.Points>(null);
 
@@ -119,25 +130,14 @@ function FloatingBackground() {
     }
   });
 
-  const count = 100;
-  const positions = React.useMemo(() => {
-    const arr = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      arr[i * 3] = (Math.random() - 0.5) * 15;
-      arr[i * 3 + 1] = (Math.random() - 0.5) * 15;
-      arr[i * 3 + 2] = (Math.random() - 0.5) * 15;
-    }
-    return arr;
-  }, []);
-
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          args={[positions, 3]}
+          args={[backgroundPositions, 3]}
           count={count}
-          array={positions}
+          array={backgroundPositions}
           itemSize={3}
         />
       </bufferGeometry>
