@@ -182,7 +182,7 @@ export default function AuthProvider({ children }: AuthProviderProps) {
           </h2>
           <p className="font-outfit text-xs text-warm-ivory/50 mb-6 leading-relaxed">
             {isSignUpMode 
-              ? "Register your email coordinates to begin traversing classical and future epochs."
+              ? "Register your email coordinates to begin traversing classical and ancient realms."
               : "Verify your email ID to authorize temporal navigation channels."}
           </p>
 

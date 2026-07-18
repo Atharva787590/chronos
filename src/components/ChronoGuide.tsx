@@ -16,7 +16,7 @@ const guideDatabase: GuideQARecord[] = [
   },
   {
     keywords: ["timeline", "scroll", "horizontal"],
-    response: "The Timeline (/timeline) is a custom horizontal scrolling rail of 18 milestones. Scroll vertically on your mouse wheel or swipe up/down on trackpads to slide the timeline left and right through classical history up to the digital future."
+    response: "The Timeline (/timeline) is a custom horizontal scrolling rail of 34 milestones. Scroll vertically on your mouse wheel or swipe up/down on trackpads to slide the timeline left and right through classical history up to Ancient Egypt."
   },
   {
     keywords: ["figure", "figures", "chat", "talk", "converse", "speak"],
