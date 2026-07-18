@@ -1,8 +1,34 @@
 # Chronos: Interactive Spatial History Experience
 
-Chronos is a high-fidelity, production-grade interactive spatial history experience built using **Next.js (App Router)**, **Tailwind CSS**, **Framer Motion**, and **Three.js** via React Three Fiber.
+Chronos is a premium, interactive web application that lets you travel through time. You can explore ancient civilizations, study historical monuments and relics in 3D, and chat directly with simulated historical figures from different eras. 
 
-The system allows users to traverse historical eras (Ancient Rome, the Renaissance, and a Cyberpunk Future) in three dimensions, interact with simulated historical figures, and examine museum relics using client-side WebGL procedural renderings.
+The application is built using **Next.js (App Router)**, **Tailwind CSS**, **Framer Motion**, and **Three.js** (via React Three Fiber).
+
+---
+
+## 📸 Screenshots & Previews
+
+### 🔐 1. Access Gatekeeper (Sign In / Sign Up)
+Before accessing the site, users must sign in or sign up with their Email ID. This protects the historical coordinates and manages user access.
+![Auth Gatekeeper](/screenshots/auth_gatekeeper.png)
+
+### ⏳ 2. Global Chronological Timeline
+A horizontal, interactive timeline charting milestones across Ancient India, Rome, the Renaissance, and a Cyberpunk Future.
+![Timeline View](/screenshots/timeline_view.png)
+
+### 🏛️ 3. Relic Museum Gallery (3D WebGL)
+Inspect 3D wireframe models of retrieved historical relics. Rotate them in three dimensions using your mouse!
+![Relics Museum Gallery](/screenshots/relic_museum.png)
+
+---
+
+## 🌟 Key Features
+
+1. **Gatekeeper Security**: Anyone accessing the portal must sign in or sign up first with their email ID. Access is fully restricted until authentication is complete.
+2. **Interactive 3D Museum**: View and interact with 10 legendary historical relics (like the Roman Laurel, Maurya Silver Coin, and Galileo's Astrolabe) rendered procedurally in WebGL. Left-click and drag to rotate them in three dimensions!
+3. **Horizontal Chronology**: Scroll through history sideways, with dedicated color-coded sectors for Rome, India, the Renaissance, and the Future.
+4. **Simulated Era Chat (Echoes of the Past)**: Chat directly with simulated historical figures (like Julius Caesar, Emperor Ashoka, and Galileo Galilei) inside the Explorer view.
+5. **AI Chrono-Guide Widget**: An AI assistant widget available on all pages to answer questions about any event, relic, or monument.
 
 ---
 
@@ -10,17 +36,18 @@ The system allows users to traverse historical eras (Ancient Rome, the Renaissan
 
 ```mermaid
 graph TD
-  A[Root Layout] --> B[Navbar]
-  A --> C[Cinematic Portal /]
-  A --> D[Chronology /timeline]
-  A --> E[Era Explorer /explorer/era]
-  A --> F[Relic Museum /gallery]
-  A --> G[Footer]
+  A[Root Layout] --> B[Auth Provider Gatekeeper]
+  B --> C[Navbar]
+  B --> D[Cinematic Portal /]
+  B --> E[Chronology /timeline]
+  B --> F[Era Explorer /explorer/era]
+  B --> G[Relic Museum /gallery]
+  B --> H[Footer]
 
-  C --> H[PortalCanvas 3D Hourglass]
-  D --> I[Horizontal Scroll Container]
-  E --> J[Echoes of the Past Chat Client]
-  F --> K[ArtifactCanvas 3D Relic Models]
+  D --> I[PortalCanvas 3D Hourglass]
+  E --> J[Horizontal Scroll Container]
+  F --> K[Echoes of the Past Chat Client]
+  G --> L[ArtifactCanvas 3D Relic Models]
 ```
 
 ---
@@ -28,13 +55,14 @@ graph TD
 ## 📂 Project Directory Structure
 
 ```bash
-├── public/                 # Static Assets (favicon, icons)
+├── public/                 # Static Assets & Screenshots
+│   └── screenshots/        # Application screenshots for GitHub
 ├── src/
 │   ├── app/
 │   │   ├── explorer/
 │   │   │   └── [era]/     # Dynamic Hub with "Echoes of the Past" Chat Interface
 │   │   │       └── page.tsx
-│   │   ├── gallery/       # 3D Artifact Museum Grid
+│   │   ├── gallery/       # 3D Artifact Museum Grid (10 Relics)
 │   │   │   └── page.tsx
 │   │   ├── timeline/      # Horizontal Scrolling Chronology
 │   │   │   └── page.tsx
@@ -42,6 +70,7 @@ graph TD
 │   │   ├── layout.tsx     # Google Font loading & core layout wrappers
 │   │   └── page.tsx       # Cinematic Portal Landing
 │   └── components/
+│       ├── AuthProvider.tsx   # Login/Register Gatekeeper Overlay
 │       ├── ArtifactCanvas.tsx # WebGL Relics (Laurel, Astrolabe, Chrono-Core)
 │       ├── Navbar.tsx         # Responsive glassmorphic layout
 │       └── PortalCanvas.tsx   # WebGL Cinematic Hourglass
@@ -75,7 +104,7 @@ Launch the development server locally:
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to experience Chronos.
+Open [http://localhost:3000](http://localhost:3000) with your Brave Browser to experience Chronos.
 
 ### 3. Production Build
 Verify code compilation and optimization:
