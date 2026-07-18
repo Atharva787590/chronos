@@ -51,49 +51,49 @@ const eraDataMap: Record<string, EraData> = {
         year: "753 BC",
         event: "Founding of Rome",
         desc: "Romulus and Remus found the city of Rome on the Palatine Hill. Rome begins as a modest pastoral settlement, gradually absorbing neighboring communities and formulating the core tribal foundations that eventually evolved into the Roman Kingdom.",
-        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Roman_Forum_from_Palatine.jpg/1280px-Roman_Forum_from_Palatine.jpg"
       },
       {
         year: "509 BC",
         event: "The Roman Republic",
         desc: "The expulsion of the last king, Tarquin the Proud, initiates the Roman Republic. Rome replaces monarchy with a system of elected magistrates (consuls) and a representative Senate, formulating early constitutional laws and establishing Patrician and Plebeian governance structures.",
-        image: "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Maccari-Cicero.jpg/1280px-Maccari-Cicero.jpg"
       },
       {
         year: "27 BC",
         event: "Rise of the Roman Empire",
         desc: "Augustus Caesar is declared Princeps (First Citizen) by the Senate, bringing an end to the civil wars that devoured the late Republic. This marks the formal establishment of the Roman Principate and the beginning of the two-century-long Pax Romana.",
-        image: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Statue-Augustus.jpg/800px-Statue-Augustus.jpg"
       },
       {
         year: "79 AD",
         event: "Eruption of Mount Vesuvius",
         desc: "Vesuvius erupts, completely burying the cities of Pompeii and Herculaneum in volcanic ash. This catastrophic event preserved a pristine snapshot of everyday Roman life, architecture, frescoes, and urban layouts for modern archaeological excavation.",
-        image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pompeii_-_Osteria_della_via_di_Mercurio_%286029565261%29.jpg/1280px-Pompeii_-_Osteria_della_via_di_Mercurio_%286029565261%29.jpg"
       },
       {
         year: "80 AD",
         event: "Colosseum Completed",
         desc: "The Flavian Amphitheatre (Colosseum) is completed under Emperor Titus. Opening with 100 days of gladiatorial games and naval simulations, the giant concrete and stone structure represents the peak of Roman structural engineering and public entertainment.",
-        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg"
       },
       {
         year: "122 AD",
         event: "Hadrian's Wall",
         desc: "Construction begins on Hadrian's Wall in Britannia, spanning 73 miles. Intended to mark the peak northern border of the Roman Empire, it served as a defensive fortification, customs checkpoint, and a physical symbol of imperial limit and control.",
-        image: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Hadrian%27s_wall_at_Greenhead_Lough.jpg/1280px-Hadrian%27s_wall_at_Greenhead_Lough.jpg"
       },
       {
         year: "313 AD",
         event: "Edict of Milan",
         desc: "Emperor Constantine and Licinius issue the Edict of Milan, legalizing Christianity across the empire. This historic proclamation ends state-sanctioned persecution of Christians and begins the religious transformation of the Mediterranean world.",
-        image: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Arch_of_Constantine_2014.jpg/1280px-Arch_of_Constantine_2014.jpg"
       },
       {
         year: "476 AD",
         event: "Fall of the Western Empire",
         desc: "The Germanic chieftain Odoacer deposes the young Emperor Romulus Augustulus in Ravenna. This event marks the traditional collapse of the Western Roman Empire and the transition of Western Europe into the Early Middle Ages.",
-        image: "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Roman_Forum_from_Palatine.jpg/1280px-Roman_Forum_from_Palatine.jpg"
       }
     ],
     achievements: [
@@ -186,73 +186,73 @@ const eraDataMap: Record<string, EraData> = {
         year: "2500 BC",
         event: "Indus Valley Urban Planning",
         desc: "Mohenjo-daro and Harappa emerge as sophisticated cities in the Indus basin. Featuring standardized baked-brick houses, gridded streets, large public granaries, and advanced underground drainage channels, it stands as the ancient world's finest demonstration of municipal planning.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Mohenjodaro_Sindh.jpeg/1280px-Mohenjodaro_Sindh.jpeg"
       },
       {
         year: "1500 BC",
         event: "Composition of the Rigveda",
         desc: "The earliest Sanskrit hymns of the Rigveda are composed in the Punjab region. Handed down orally through generations with phonetic precision, these texts contain foundational philosophical concepts of cosmological order (Rta), Vedic rituals, and early Indian metaphysics.",
-        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/RigvedaMS.jpg/1280px-RigvedaMS.jpg"
       },
       {
         year: "599 BC",
         event: "Lord Mahavira & Jainism",
         desc: "The birth of Vardhamana Mahavira, the 24th Tirthankara of Jainism. Mahavira consolidated Jain philosophy, placing supreme emphasis on Anekantavada (non-absolutism), Aparigraha (non-possession), and Ahimsa (complete non-violence) as the path to spiritual liberation.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Gomateshwara_statue%2C_Shravanabelagola.jpg/800px-Gomateshwara_statue%2C_Shravanabelagola.jpg"
       },
       {
         year: "563 BC",
         event: "Gautama Buddha's Enlightenment",
         desc: "Siddhartha Gautama attains enlightenment under the Bodhi Tree in Bodh Gaya, becoming the Buddha. He begins preaching the Dharma—the Four Noble Truths and the Eightfold Path—advocating for a Middle Way to overcome human suffering and attachment.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mahabodhi_temple.jpg/800px-Mahabodhi_temple.jpg"
       },
       {
         year: "322 BC",
         event: "Maurya Empire Founded",
         desc: "Chandragupta Maurya, guided by the master strategist Chanakya (Kautilya), deposes the Nanda dynasty in Patliputra. He unifies the fractured kingdoms of northern India, establishing a centralized state with comprehensive intelligence and economic administration.",
-        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sarnath_museum_2013.jpg/800px-Sarnath_museum_2013.jpg"
       },
       {
         year: "261 BC",
         event: "Kalinga War & Edicts of Dhamma",
         desc: "Emperor Ashoka conquers the kingdom of Kalinga. Overwhelmed by the carnage of 100,000 casualties, Ashoka renounces expansionist warfare, embraces Buddhism, and carves rock and pillar edicts promoting moral law, welfare, and religious tolerance.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ashoka%27s_Rock_Edict_in_Girnar%2C_Junagadh_Gujarat.jpg/1280px-Ashoka%27s_Rock_Edict_in_Girnar%2C_Junagadh_Gujarat.jpg"
       },
       {
         year: "78 AD",
         event: "Kushan Empire & Saka Era",
         desc: "Kanishka I ascends the Kushan throne, initiating the Saka Era. Under his rule, the Kushan Empire becomes a center of transcontinental Silk Road trade, Gandharan Greco-Buddhist sculpture, and hosts the Fourth Buddhist Council in Kashmir.",
-        image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Gandhara_Buddha_%28tnm%29.jpeg/800px-Gandhara_Buddha_%28tnm%29.jpeg"
       },
       {
         year: "320 AD",
         event: "Gupta Dynasty Foundation",
         desc: "Chandragupta I ascends the throne, initiating the Gupta Empire. This period marked a spectacular renaissance of Sanskrit literature, classical music, metallurgy, and temple architecture, famously referred to as the Golden Age of India.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Iron_pillar_of_Chandragupta_II.jpg/800px-Iron_pillar_of_Chandragupta_II.jpg"
       },
       {
         year: "499 AD",
         event: "Aryabhata's Aryabhatiya",
         desc: "Aryabhata publishes his revolutionary astronomical treatise. In it, he formulates place-value arithmetic, introduces the concept of zero as a mathematical entity, calculates the value of Pi to four decimal places, and proves that the Earth rotates on its axis.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Jantar_Mantar_Jaipur_March_2016.jpg/1280px-Jantar_Mantar_Jaipur_March_2016.jpg"
       },
       {
         year: "630 AD",
         event: "Nalanda University Golden Peak",
         desc: "The premier monastic university of Nalanda reaches its peak under King Harsha, hosting over 10,000 students and scholars. Travelers like Xuanzang document its vast libraries and rigorous debates on Buddhist philosophy, logic, and medicine.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Nalanda_university_ruins_01.jpg/1280px-Nalanda_university_ruins_01.jpg"
       },
       {
         year: "757 AD",
         event: "Kailash Monolithic Temple",
         desc: "Rashtrakuta King Krishna I commissions the carving of the Kailash Temple at Ellora Caves. Carved from the top-down out of a single basalt mountain face, this engineering feat removed 200,000 tons of rock to create a massive monolithic temple.",
-        image: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/EloraKailasa.jpg/1280px-EloraKailasa.jpg"
       },
       {
         year: "1010 AD",
         event: "Brihadisvara Granite Temple",
         desc: "Rajaraja Chola I completes the Brihadisvara Temple in Tanjore. Constructed entirely of interlocking granite blocks without mortar, the temple features a massive 81-ton monolithic stone dome (Kumbam) lifted to the top of a 216-foot tower.",
-        image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Brihadisvara_temple_Thanjavur_2014.jpg/1280px-Brihadisvara_temple_Thanjavur_2014.jpg"
       }
     ],
     achievements: [
@@ -345,49 +345,49 @@ const eraDataMap: Record<string, EraData> = {
         year: "1308 AD",
         event: "Dante's Divine Comedy",
         desc: "Dante Alighieri begins composing the Divine Comedy. Written in the Florentine vernacular rather than Latin, this literary masterpiece bridged medieval theological visions with early humanist exploration of individual morality.",
-        image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dante_Alighieri_portrait.jpg/800px-Dante_Alighieri_portrait.jpg"
       },
       {
         year: "1440 AD",
         event: "Gutenberg Printing Press",
         desc: "Johannes Gutenberg invents the movable type printing press in Mainz. By enabling rapid reproduction of texts, it democratizes literacy, accelerates scientific exchange, and fuels the Protestant Reformation.",
-        image: "https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/1280px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
       },
       {
         year: "1492 AD",
         event: "Da Vinci's Flight Sketches",
         desc: "Leonardo da Vinci fills his notebooks with conceptual designs for human flight, including the ornithopter and the aerial screw. These studies demonstrate his empirical approach, merging artistic geometry with physical mechanics.",
-        image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruvian_Man_Luc_Viatour.jpg/800px-Da_Vinci_Vitruvian_Man_Luc_Viatour.jpg"
       },
       {
         year: "1504 AD",
         event: "Michelangelo's David",
         desc: "Michelangelo Buonarroti unveils his colossal marble sculpture of David in Florence. Carved from a single discarded block of marble, the statue represents a peak of anatomical realism, emotional intensity, and republican civic pride.",
-        image: "https://images.unsplash.com/photo-1601887389937-0b02c26b6c3c?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/%27David%27_by_Michelangelo_Fir_JBU002.jpg/800px-%27David%27_by_Michelangelo_Fir_JBU002.jpg"
       },
       {
         year: "1508 AD",
         event: "Sistine Chapel Ceiling",
         desc: "Michelangelo begins painting the ceiling of the Sistine Chapel under Pope Julius II. Over four grueling years, he created a vast fresco system depicting Genesis, redefining Western painting with dynamic anatomy and monumental scale.",
-        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Sistine_Chapel_ceiling_photo_2.jpg/1280px-Sistine_Chapel_ceiling_photo_2.jpg"
       },
       {
         year: "1543 AD",
         event: "Copernican Heliocentrism",
         desc: "Nicolaus Copernicus publishes De revolutionibus orbium coelestium. He mathematically demonstrates that the Earth and planets orbit around the Sun, challenging the Ptolemaic geocentric model that dominated medieval cosmology.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Portrait_of_Nicolaus_Copernicus.jpg/800px-Portrait_of_Nicolaus_Copernicus.jpg"
       },
       {
         year: "1597 AD",
         event: "Shakespeare's Globe Theatre",
         desc: "The Lord Chamberlain's Men establish the Globe Theatre in London. William Shakespeare's plays redefine vernacular English literature, exploring complex psychological profiles, political power, and human nature.",
-        image: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MiddleTempleHall.jpg/1280px-MiddleTempleHall.jpg"
       },
       {
         year: "1610 AD",
         event: "Galileo's Telescope",
         desc: "Galileo Galilei publishes Sidereus Nuncius, detailing his astronomical observations. Spotting the moons of Jupiter, sunspots, and lunar craters, he provides the first empirical evidence supporting Copernican heliocentrism.",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Galileo.arp.300pix.jpg/800px-Galileo.arp.300pix.jpg"
       }
     ],
     achievements: [

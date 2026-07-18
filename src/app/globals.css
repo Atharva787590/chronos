@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -13,6 +14,7 @@
   
   --font-playfair: "Playfair Display", Georgia, serif;
   --font-outfit: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-cinzel: "Cinzel", "Trajan Pro", Georgia, serif;
 }
 
 :root {
@@ -52,6 +54,26 @@ body {
 ::selection {
   background-color: #D4AF37;
   color: #070708;
+}
+
+/* Historical Stone Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.025;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+/* Font Utility */
+.font-cinzel {
+  font-family: var(--font-cinzel);
+  letter-spacing: 0.08em;
 }
 
 /* Glassmorphism & UI utilities */
@@ -97,6 +119,14 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* Historical parchment glow for milestone images */
+.historical-img-frame {
+  box-shadow: 
+    0 0 0 1px rgba(212, 175, 55, 0.12),
+    0 4px 24px rgba(0,0,0,0.5),
+    inset 0 0 20px rgba(0,0,0,0.3);
+}
+
 /* Animations */
 @keyframes pulse-gentle {
   0%, 100% { opacity: 1; }
@@ -105,5 +135,14 @@ body {
 
 .pulse-glow {
   animation: pulse-gentle 3s infinite ease-in-out;
+}
+
+@keyframes stone-fade-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.stone-fade-in {
+  animation: stone-fade-in 0.7s ease both;
 }
 

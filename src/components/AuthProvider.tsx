@@ -29,21 +29,90 @@ export default function AuthProvider({ children }: AuthProviderProps) {
     }
   }, []);
 
+  /**
+   * Multi-layer email validation — blocks fake, disposable, and test emails.
+   */
+  const validateEmail = (rawEmail: string): string | null => {
+    const trimmed = rawEmail.trim().toLowerCase();
+
+    // 1. Full RFC5322-compliant format check
+    const emailRegex = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(trimmed)) {
+      return "Please enter a properly formatted email (e.g. yourname@gmail.com).";
+    }
+
+    const [username, domain] = trimmed.split("@");
+
+    // 2. Username must be at least 3 characters
+    if (username.length < 3) {
+      return "Email username must be at least 3 characters (e.g. 'ab@domain.com' is not valid).";
+    }
+
+    // 3. Block consecutive dots (e.g. a..b@domain.com)
+    if (/\.\./.test(trimmed)) {
+      return "Email cannot contain consecutive dots (e.g. 'a..b@c.com' is invalid).";
+    }
+
+    // 4. TLD must be at least 2 real characters
+    const tldPart = domain.split(".").pop() || "";
+    if (tldPart.length < 2) {
+      return "Please use a valid email domain extension (e.g. .com, .in, .org).";
+    }
+
+    // 5. Block known fake/disposable/test domains
+    const blockedDomains = new Set([
+      "test.com", "example.com", "fake.com", "fake.io", "fake.net",
+      "abc.com", "abc.xyz", "xyz.com", "dummy.com", "hello.com",
+      "mailinator.com", "guerrillamail.com", "guerrillamail.net",
+      "10minutemail.com", "10minutemail.net", "tempmail.com",
+      "throwam.com", "throwamail.com", "yopmail.com", "trashmail.com",
+      "dispostable.com", "spamgourmet.com", "maildrop.cc",
+      "sharklasers.com", "guerrillamailblock.com", "grr.la", "spam4.me",
+      "notreal.com", "noreply.com", "nomail.com", "temp.com",
+      "sample.com", "domain.com", "email.com", "user.com",
+      "aaa.com", "bbb.com", "ccc.com", "zzz.com",
+      "asdf.com", "qwer.com", "zxcv.com",
+    ]);
+
+    if (blockedDomains.has(domain)) {
+      return `"@${domain}" is not a recognized email provider. Please use your real email address (e.g. Gmail, Yahoo, Outlook, or your organization's email).`;
+    }
+
+    // 6. Block single-character domain names (e.g. @a.com)
+    const domainNamePart = domain.split(".").slice(0, -1).join(".");
+    if (domainNamePart.length < 2) {
+      return "Email domain is too short. Please use a real email provider.";
+    }
+
+    return null; // ✅ Valid
+  };
+
   const handleAuthSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
-    
-    // Basic validation
-    if (!email.trim() || !email.includes("@")) {
-      setError("Please enter a valid email address.");
-      return;
-    }
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters long.");
-      return;
-    }
+
+    // Name check first (sign up only)
     if (isSignUpMode && !fullName.trim()) {
-      setError("Please enter your name.");
+      setError("Please enter your full name.");
+      return;
+    }
+
+    // Multi-layer email validation
+    const emailError = validateEmail(email);
+    if (emailError) {
+      setError(emailError);
+      return;
+    }
+
+    // Password length check
+    if (password.length < 8) {
+      setError("Password must be at least 8 characters long for security.");
+      return;
+    }
+
+    // Password complexity check
+    if (!/[A-Z]/.test(password) && !/[0-9]/.test(password)) {
+      setError("Password should contain at least one uppercase letter or number for better security.");
       return;
     }
 
@@ -166,7 +235,7 @@ export default function AuthProvider({ children }: AuthProviderProps) {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="••••••••"
+                  placeholder="Min. 8 chars, include a number or uppercase"
                   className="w-full bg-charcoal border border-accent/15 focus:border-accent/80 focus:ring-1 focus:ring-accent rounded-xl pl-11 pr-4 py-3 text-xs text-warm-ivory placeholder-warm-ivory/20 outline-none transition-all"
                 />
               </div>
@@ -231,7 +300,7 @@ export default function AuthProvider({ children }: AuthProviderProps) {
 
         {/* Trust Note */}
         <p className="text-center font-outfit text-[10px] text-warm-ivory/30 mt-6 max-w-xs mx-auto">
-          Authorization link secure. Credentials stored locally in client-side temporal caches.
+          Authorization is secure. Credentials stored locally in your browser. We block fake, test, and disposable email addresses to keep the community authentic.
         </p>
 
       </div>
