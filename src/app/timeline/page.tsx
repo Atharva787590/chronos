@@ -27,7 +27,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "753 BC",
     title: "Founding of Rome",
     summary: "Romulus and Remus found the city of Rome on the Palatine Hill. Rome begins as a modest pastoral settlement, gradually absorbing neighboring communities and formulating the core tribal foundations that eventually evolved into the Roman Kingdom.",
-    imageUrl: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6a/She-wolf_suckles_Romulus_and_Remus.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -39,7 +39,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "509 BC",
     title: "The Roman Republic",
     summary: "The expulsion of the last king, Tarquin the Proud, initiates the Roman Republic. Rome replaces monarchy with a system of elected magistrates (consuls) and a representative Senate, formulating early constitutional laws and establishing Patrician and Plebeian governance structures.",
-    imageUrl: "https://images.unsplash.com/photo-1515542690876-879e04858dd2?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Cicero_Accuses_Catiline_by_Cesare_Maccari.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -51,7 +51,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "27 BC",
     title: "Rise of the Roman Empire",
     summary: "Augustus Caesar is declared Princeps (First Citizen) by the Senate, bringing an end to the civil wars that devoured the late Republic. This marks the formal establishment of the Roman Principate and the beginning of the two-century-long Pax Romana.",
-    imageUrl: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Statue-Augustus.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -63,7 +63,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "79 AD",
     title: "Eruption of Mount Vesuvius",
     summary: "Vesuvius erupts, completely burying the cities of Pompeii and Herculaneum in volcanic ash. This catastrophic event preserved a pristine snapshot of everyday Roman life, architecture, frescoes, and urban layouts for modern archaeological excavation.",
-    imageUrl: "https://images.unsplash.com/photo-1568322422-309b4efc99d8?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f6/L%27ultimo_giorno_di_Pompei_%28K.Brullov%2C_1830-33%29.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -75,7 +75,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "80 AD",
     title: "Colosseum Completed",
     summary: "The Flavian Amphitheatre (Colosseum) is completed under Emperor Titus. Opening with 100 days of gladiatorial games and naval simulations, the giant concrete and stone structure represents the peak of Roman structural engineering and public entertainment.",
-    imageUrl: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_20070730.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -87,7 +87,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "122 AD",
     title: "Hadrian's Wall",
     summary: "Construction begins on Hadrian's Wall in Britannia, spanning 73 miles. Intended to mark the peak northern border of the Roman Empire, it served as a defensive fortification, customs checkpoint, and a physical symbol of imperial limit and control.",
-    imageUrl: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Hadrian%27s_Wall_near_Greenhead.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -99,7 +99,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "313 AD",
     title: "Edict of Milan",
     summary: "Emperor Constantine and Licinius issue the Edict of Milan, legalizing Christianity across the empire. This historic proclamation ends state-sanctioned persecution of Christians and begins the religious transformation of the Mediterranean world.",
-    imageUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/87/Constantine_the_Great_by_Peter_Paul_Rubens.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -111,7 +111,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "476 AD",
     title: "Fall of the Western Empire",
     summary: "The Germanic chieftain Odoacer deposes the young Emperor Romulus Augustulus in Ravenna. This event marks the traditional collapse of the Western Roman Empire and the transition of Western Europe into the Early Middle Ages.",
-    imageUrl: "https://images.unsplash.com/photo-1608976767576-9cf7c48f8695?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Romulus_Augustus_resigns_the_crown.jpg",
     borderTheme: "border-red-800/30",
     accentText: "text-red-400",
     themeBg: "bg-red-950/10"
@@ -125,7 +125,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "2500 BC",
     title: "Indus Valley Planning",
     summary: "Mohenjo-daro and Harappa emerge as sophisticated cities in the Indus basin. Featuring standardized baked-brick houses, gridded streets, large public granaries, and advanced underground drainage channels, it stands as the ancient world's finest demonstration of municipal planning.",
-    imageUrl: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/77/Great_Bath_Mohenjo-daro.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -137,7 +137,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1500 BC",
     title: "Composition of the Rigveda",
     summary: "The earliest Sanskrit hymns of the Rigveda are composed in the Punjab region. Handed down orally through generations with phonetic precision, these texts contain foundational philosophical concepts of cosmological order (Rta), Vedic rituals, and early Indian metaphysics.",
-    imageUrl: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rigveda_MS2097.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -149,7 +149,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "599 BC",
     title: "Lord Mahavira & Jainism",
     summary: "The birth of Vardhamana Mahavira, the 24th Tirthankara of Jainism. Mahavira consolidated Jain philosophy, placing supreme emphasis on Anekantavada (non-absolutism), Aparigraha (non-possession), and Ahimsa (complete non-violence) as the path to spiritual liberation.",
-    imageUrl: "https://images.unsplash.com/photo-1609137882207-3360c719e707?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Mahavira_Statue_at_Adinath_Temple%2C_Ranakpur.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -161,7 +161,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "563 BC",
     title: "Buddha's Enlightenment",
     summary: "Siddhartha Gautama attains enlightenment under the Bodhi Tree in Bodh Gaya, becoming the Buddha. He begins preaching the Dharma—the Four Noble Truths and the Eightfold Path—advocating for a Middle Way to overcome human suffering and attachment.",
-    imageUrl: "https://images.unsplash.com/photo-1542362567-b07eac790acd?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Buddha_in_Sarnath_Museum.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -173,7 +173,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "322 BC",
     title: "Maurya Empire Founded",
     summary: "Chandragupta Maurya, guided by the master strategist Chanakya (Kautilya), deposes the Nanda dynasty in Patliputra. He unifies the fractured kingdoms of northern India, establishing a centralized state with comprehensive intelligence and economic administration.",
-    imageUrl: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/be/Silver_punchmarked_coin_of_the_Maurya_Empire.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -185,7 +185,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "261 BC",
     title: "Kalinga War & Dhamma Edicts",
     summary: "Emperor Ashoka conquers the kingdom of Kalinga. Overwhelmed by the carnage of 100,000 casualties, Ashoka renounces expansionist warfare, embraces Buddhism, and carves rock and pillar edicts promoting moral law, welfare, and religious tolerance.",
-    imageUrl: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Lion_Capital_of_Ashoka_at_Sarnath.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -197,7 +197,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "78 AD",
     title: "Kushan Empire & Saka Era",
     summary: "Kanishka I ascends the Kushan throne, initiating the Saka Era. Under his rule, the Kushan Empire becomes a center of transcontinental Silk Road trade, Gandharan Greco-Buddhist sculpture, and hosts the Fourth Buddhist Council in Kashmir.",
-    imageUrl: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/30/KanishkaCoinSarnath.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -209,7 +209,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "320 AD",
     title: "Gupta Dynasty Foundation",
     summary: "Chandragupta I ascends the throne, initiating the Gupta Empire. This period marked a spectacular renaissance of Sanskrit literature, classical music, metallurgy, and temple architecture, famously referred to as the Golden Age of India.",
-    imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/52/Gupta_dynasty_coin.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -221,7 +221,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "499 AD",
     title: "Aryabhata's Astronomical Calculations",
     summary: "Aryabhata publishes his revolutionary astronomical treatise. In it, he formulates place-value arithmetic, introduces the concept of zero as a mathematical entity, calculates the value of Pi to four decimal places, and proves that the Earth rotates on its axis.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Aryabhata_stamp_1975.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -233,7 +233,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "630 AD",
     title: "Nalanda University Peak",
     summary: "The premier monastic university of Nalanda reaches its peak under King Harsha, hosting over 10,000 students and scholars. Travelers like Xuanzang document its vast libraries and rigorous debates on Buddhist philosophy, logic, and medicine.",
-    imageUrl: "https://images.unsplash.com/photo-1590073844006-33379778ae09?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Nalanda_University_Ruins.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -245,7 +245,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "757 AD",
     title: "Kailash Monolithic Temple",
     summary: "Rashtrakuta King Krishna I commissions the carving of the Kailash Temple at Ellora Caves. Carved from the top-down out of a single basalt mountain face, this engineering feat removed 200,000 tons of rock to create a massive monolithic temple.",
-    imageUrl: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/60/Ellora_cave16_002.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -257,7 +257,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1010 AD",
     title: "Brihadisvara Granite Temple",
     summary: "Rajaraja Chola I completes the Brihadisvara Temple in Tanjore. Constructed entirely of interlocking granite blocks without mortar, the temple features a massive 81-ton monolithic stone dome (Kumbam) lifted to the top of a 216-foot tower.",
-    imageUrl: "https://images.unsplash.com/photo-1600100397910-c40d7c71d607?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/41/Tanjore_Brihadisvara_Temple_Tower.jpg",
     borderTheme: "border-amber-700/30",
     accentText: "text-amber-500",
     themeBg: "bg-amber-950/15"
@@ -271,7 +271,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1308 AD",
     title: "Dante's Divine Comedy",
     summary: "Dante Alighieri begins composing the Divine Comedy. Written in the Florentine vernacular rather than Latin, this literary masterpiece bridged medieval theological visions with early humanist exploration of individual morality.",
-    imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/86/Dante_Domenico_di_Michelino_Duomo_Florence.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -283,7 +283,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1440 AD",
     title: "Gutenberg Printing Press",
     summary: "Johannes Gutenberg invents the movable type printing press in Mainz. By enabling rapid reproduction of texts, it democratizes literacy, accelerates scientific exchange, and fuels the Protestant Reformation.",
-    imageUrl: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Gutenberg_press.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -295,7 +295,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1492 AD",
     title: "Da Vinci's Flight Sketches",
     summary: "Leonardo da Vinci fills his notebooks with conceptual designs for human flight, including the ornithopter and the aerial screw. These studies demonstrate his empirical approach, merging artistic geometry with physical mechanics.",
-    imageUrl: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/07/Leonardo_Design_for_a_Flying_Machine.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -307,7 +307,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1504 AD",
     title: "Michelangelo's David",
     summary: "Michelangelo Buonarroti unveils his colossal marble sculpture of David in Florence. Carved from a single discarded block of marble, the statue represents a peak of anatomical realism, emotional intensity, and republican civic pride.",
-    imageUrl: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/84/Michelangelo%27s_David_-_original_in_Accademia.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -319,7 +319,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1508 AD",
     title: "Sistine Chapel Frescoes",
     summary: "Michelangelo begins painting the ceiling of the Sistine Chapel under Pope Julius II. Over four grueling years, he created a vast fresco system depicting Genesis, redefining Western painting with dynamic anatomy and monumental scale.",
-    imageUrl: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sistine_Chapel_ceiling_02.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -331,7 +331,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1543 AD",
     title: "Copernican Heliocentrism",
     summary: "Nicolaus Copernicus publishes De revolutionibus orbium coelestium. He mathematically demonstrates that the Earth and planets orbit around the Sun, challenging the Ptolemaic geocentric model that dominated medieval cosmology.",
-    imageUrl: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Copernican_system.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -343,7 +343,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1597 AD",
     title: "Shakespeare's Globe Theatre",
     summary: "The Lord Chamberlain's Men establish the Globe Theatre in London. William Shakespeare's plays redefine vernacular English literature, exploring complex psychological profiles, political power, and human nature.",
-    imageUrl: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Globe_theatre_london_2004.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -355,7 +355,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "1610 AD",
     title: "Galileo's Telescope",
     summary: "Galileo Galilei publishes Sidereus Nuncius, detailing his astronomical observations. Spotting the moons of Jupiter, sunspots, and lunar craters, he provides the first empirical evidence supporting Copernican heliocentrism.",
-    imageUrl: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Galileo_telescope.jpg",
     borderTheme: "border-accent/30",
     accentText: "text-accent",
     themeBg: "bg-yellow-950/10"
@@ -405,7 +405,7 @@ const timeStreamData: MilestoneItem[] = [
     year: "2095 AD",
     title: "Climate Dome Enclaves",
     summary: "Extreme ecological collapse forces metropolitan populations into climate-controlled geodesic domes. Outside, toxic rain and dust storms sweep empty lands; inside, high-density neon districts thrive under corporate control.",
-    imageUrl: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=800&auto=format&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=800&auto=format&fit=crop",
     borderTheme: "border-cyan-800/30",
     accentText: "text-cyan-400",
     themeBg: "bg-cyan-950/10"
