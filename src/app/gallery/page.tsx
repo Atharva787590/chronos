@@ -125,6 +125,144 @@ const relics: RelicItem[] = [
     colorTheme: "border-cyan-800/30 hover:border-cyan-700/60 shadow-cyan-950/10",
     accentText: "text-cyan-400",
     badgeBg: "bg-cyan-950/40 text-cyan-400 border-cyan-800/30"
+  },
+  {
+    id: "harappa-bull",
+    name: "The Harappan Terracotta Bull",
+    era: "Ancient India",
+    year: "2500 BC",
+    icon: Compass,
+    canvasType: "laurel",
+    description: "A finely sculpted terracotta bull figurine unearthed from the lower streets of Mohenjo-daro. Depicting a hump-backed Zebu bull with powerful shoulder musculature, it illustrates the advanced artistic refinement and deep pastoral/agrarian cultural roots of the Indus Valley Civilization.",
+    technicalSpecs: [
+      "Material: Baked Terracotta Clay",
+      "Dimensions: 14.5cm length, 9cm height",
+      "Weight: 310 grams",
+      "Artistry Model: Hand-Modeled Zebu Bull",
+      "Archaeological Layer: Mature Harappan (Phase II)",
+      "Restoration Status: Intact horn joints repaired",
+      "Temporal Sector: Indus-H1",
+      "Chronological Half-Life: Stable"
+    ],
+    rarity: "Imperial",
+    colorTheme: "border-amber-700/30 hover:border-amber-600/60 shadow-amber-950/15",
+    accentText: "text-amber-500",
+    badgeBg: "bg-amber-950/40 text-amber-500 border-amber-800/30"
+  },
+  {
+    id: "nalanda-seal",
+    name: "The Nalanda Monastic Seal",
+    era: "Ancient India",
+    year: "630 AD",
+    icon: Compass,
+    canvasType: "coin",
+    description: "An official clay seal of the Nalanda Mahavihara, bearing the inscription of the university name in post-Gupta Brahmi script and the insignia of the Dharma Chakra flanked by two deer. Used to certify academic credentials and official monastic communications across Asia.",
+    technicalSpecs: [
+      "Material: Sun-Dried River Silt Clay",
+      "Dimensions: 5.6cm Diameter",
+      "Weight: 45.2 grams",
+      "Insignia: Dharma Chakra & Deer Symbol",
+      "Script: Brahmi Characters",
+      "Restoration Status: Kiln-hardened for preservation",
+      "Temporal Sector: India-N4",
+      "Chronological Half-Life: Resonant"
+    ],
+    rarity: "Imperial",
+    colorTheme: "border-amber-700/30 hover:border-amber-600/60 shadow-amber-950/15",
+    accentText: "text-amber-500",
+    badgeBg: "bg-amber-950/40 text-amber-500 border-amber-800/30"
+  },
+  {
+    id: "travertine-ring",
+    name: "The Travertine Arch Fragment",
+    era: "Ancient Rome",
+    year: "80 AD",
+    icon: Landmark,
+    canvasType: "laurel",
+    description: "A sculpted segment of travertine limestone salvaged from the outer ring of the Roman Colosseum. Bears marks of iron clamps and chisel scoring from Flavian stonemasons, representing the immense architectural scale and public theater structures of the Roman empire.",
+    technicalSpecs: [
+      "Material: Travertine Limestone",
+      "Dimensions: 34cm width, 25cm height",
+      "Weight: 8.2 kilograms",
+      "Structural Component: Arch radial stone",
+      "Quarry Origin: Tivoli Basins",
+      "Restoration Status: Sandblasted and stabilized",
+      "Temporal Sector: Rome-C3",
+      "Chronological Half-Life: Stable"
+    ],
+    rarity: "Imperial",
+    colorTheme: "border-red-800/30 hover:border-red-700/60 shadow-red-950/10",
+    accentText: "text-red-400",
+    badgeBg: "bg-red-950/40 text-red-400 border-red-800/30"
+  },
+  {
+    id: "gutenberg-type",
+    name: "The Gutenberg Metal Type Block",
+    era: "The Renaissance",
+    year: "1440 AD",
+    icon: Compass,
+    canvasType: "core",
+    description: "An original lead-tin-antimony alloy type block cast during Gutenberg's first printing of the Bible in Mainz. Features the reverse relief of the Gothic character 'G', representing the dawn of mass literacy and movable type printing in Europe.",
+    technicalSpecs: [
+      "Material: Lead-Tin-Antimony Alloy",
+      "Dimensions: 2.1cm height, 0.8cm width",
+      "Weight: 14.8 grams",
+      "Character Relief: Gothic Capital 'G'",
+      "Casting Technique: Hand-held mold punch",
+      "Restoration Status: Fully readable letterface",
+      "Temporal Sector: Mainz-G1",
+      "Chronological Half-Life: Stable"
+    ],
+    rarity: "Scientific",
+    colorTheme: "border-accent/30 hover:border-accent/60 shadow-accent/5",
+    accentText: "text-accent",
+    badgeBg: "bg-accent/10 text-accent border-accent/20"
+  },
+  {
+    id: "chola-bronze",
+    name: "The Chola Nataraja Bronze",
+    era: "Ancient India",
+    year: "1010 AD",
+    icon: Compass,
+    canvasType: "astrolabe",
+    description: "A masterwork bronze sculpture of Lord Shiva in his cosmic dance posture (Nataraja), cast using the lost-wax method during the peak of the Chola Dynasty in Tanjore. Represents the intersection of physical metallurgy and metaphysical devotion.",
+    technicalSpecs: [
+      "Material: Lost-Wax Cast Bronze",
+      "Dimensions: 45cm height, 38cm width",
+      "Weight: 12.4 kilograms",
+      "Casting Method: Madhuchishta Vidhana",
+      "Patina Finish: Natural green copper carbonate",
+      "Restoration Status: Pristine ring of fire",
+      "Temporal Sector: Tanjore-C2",
+      "Chronological Half-Life: Stable"
+    ],
+    rarity: "Imperial",
+    colorTheme: "border-amber-700/30 hover:border-amber-600/60 shadow-amber-950/15",
+    accentText: "text-amber-500",
+    badgeBg: "bg-amber-950/40 text-amber-500 border-amber-800/30"
+  },
+  {
+    id: "dante-inkwell",
+    name: "The Florentine Bronze Inkwell",
+    era: "The Renaissance",
+    year: "1308 AD",
+    icon: Compass,
+    canvasType: "core",
+    description: "An ornate bronze inkwell used by Florentine writers during the late Middle Ages and early Renaissance. Engraved with classical figures and gargoyles, it served as the literal basin from which works of humanism and early literature were penned.",
+    technicalSpecs: [
+      "Material: Cast Bronze & Brass Liner",
+      "Dimensions: 14cm width, 10cm height",
+      "Weight: 620 grams",
+      "Engraving motifs: Classic laurel wreaths",
+      "Lid Seal: Threaded screw fit",
+      "Restoration Status: Preserved dry ink residue",
+      "Temporal Sector: Florence-D1",
+      "Chronological Half-Life: Stable"
+    ],
+    rarity: "Scientific",
+    colorTheme: "border-accent/30 hover:border-accent/60 shadow-accent/5",
+    accentText: "text-accent",
+    badgeBg: "bg-accent/10 text-accent border-accent/20"
   }
 ];
 
@@ -159,7 +297,7 @@ export default function GalleryPage() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.6 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
                 className={`bg-charcoal-dark/40 border ${relic.colorTheme} rounded-3xl p-6 flex flex-col justify-between shadow-2xl relative group overflow-hidden`}
               >
                 {/* 3D Canvas Box */}
@@ -170,7 +308,7 @@ export default function GalleryPage() {
                   <span className={`absolute top-4 left-4 px-3 py-1 text-[10px] font-outfit font-bold uppercase tracking-wider rounded-full border ${relic.badgeBg}`}>
                     {relic.rarity}
                   </span>
-
+ 
                   {/* Drag notice overlay */}
                   <div className="absolute bottom-4 right-4 flex items-center gap-1.5 text-[10px] font-outfit text-warm-ivory/40 bg-charcoal-dark/80 px-2.5 py-1 rounded-full border border-accent/5 backdrop-blur-sm pointer-events-none">
                     <Maximize2 className="w-3 h-3 text-accent" />

@@ -133,6 +133,15 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Load user from localStorage on mount
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("chronos_user_email");
+    if (savedEmail) {
+      const savedName = localStorage.getItem("chronos_user_name") || savedEmail.split("@")[0];
+      setUser({ name: savedName, email: savedEmail });
+    }
+  }, []);
+
   const handleSearchSelect = (url: string) => {
     setSearchQuery("");
     setShowSearchResults(false);
@@ -143,16 +152,22 @@ export default function Navbar() {
     e.preventDefault();
     if (!authEmail.trim()) return;
     const name = authName.trim() || authEmail.split("@")[0];
+    localStorage.setItem("chronos_user_email", authEmail);
+    localStorage.setItem("chronos_user_name", name);
     setUser({ name, email: authEmail });
     setShowAuthModal(false);
     // Reset Form
     setAuthEmail("");
     setAuthPassword("");
     setAuthName("");
+    window.location.reload();
   };
 
   const handleSignOut = () => {
+    localStorage.removeItem("chronos_user_email");
+    localStorage.removeItem("chronos_user_name");
     setUser(null);
+    window.location.reload();
   };
 
   return (
