@@ -44,9 +44,10 @@ export default function LandingPage() {
       period: "27 BC - 476 AD",
       icon: Landmark,
       description: "Step into the marble courts of empires, gladiators, and engineering feats that shaped the western world.",
-      color: "border-red-800/40 hover:border-red-700/60 shadow-red-950/20",
-      accentBg: "bg-red-800/10",
-      accentText: "text-red-400",
+      color: "border-accent/25 hover:border-accent/45 shadow-accent/5",
+      accentBg: "bg-accent/10",
+      accentText: "text-accent",
+      imageUrl: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=800",
     },
     {
       id: "india",
@@ -54,9 +55,10 @@ export default function LandingPage() {
       period: "322 BC - 1050 AD",
       icon: Compass,
       description: "Delve into ancient stone empires, zero-origin math, and profound dharma paths that shaped global thoughts.",
-      color: "border-amber-700/40 hover:border-amber-600/60 shadow-amber-950/20",
-      accentBg: "bg-amber-800/10",
-      accentText: "text-amber-500",
+      color: "border-accent/25 hover:border-accent/45 shadow-accent/5",
+      accentBg: "bg-accent/10",
+      accentText: "text-accent",
+      imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
     },
     {
       id: "renaissance",
@@ -64,9 +66,10 @@ export default function LandingPage() {
       period: "14th - 17th Century",
       icon: Compass,
       description: "Witness the resurgence of classical art, humanism, and scientific curiosity under the Tuscan sun.",
-      color: "border-accent/40 hover:border-accent/60 shadow-accent/10",
+      color: "border-accent/25 hover:border-accent/45 shadow-accent/5",
       accentBg: "bg-accent/10",
       accentText: "text-accent",
+      imageUrl: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=800",
     },
     {
       id: "egypt",
@@ -74,9 +77,10 @@ export default function LandingPage() {
       period: "3100 BC - 30 BC",
       icon: Landmark,
       description: "Traverse the sands of time to explore towering pyramids, sacred hieroglyphs, and powerful pharaohs.",
-      color: "border-amber-800/40 hover:border-amber-700/60 shadow-amber-950/20",
-      accentBg: "bg-amber-800/10",
-      accentText: "text-amber-500",
+      color: "border-accent/25 hover:border-accent/45 shadow-accent/5",
+      accentBg: "bg-accent/10",
+      accentText: "text-accent",
+      imageUrl: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=80&w=800",
     },
   ];
 
@@ -168,16 +172,29 @@ export default function LandingPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.15, duration: 0.5 }}
-                  className={`bg-charcoal border ${era.color} p-6 rounded-2xl flex flex-col items-start gap-4 shadow-2xl transition-all hover:-translate-y-2 group`}
+                  className={`bg-charcoal border ${era.color} p-5 rounded-2xl flex flex-col items-start gap-3.5 shadow-2xl transition-all hover:-translate-y-2 group overflow-hidden`}
                 >
-                  <div className={`p-3 rounded-xl ${era.accentBg} ${era.accentText}`}>
-                    <IconComponent className="w-6 h-6" />
+                  {/* Era Image Banner */}
+                  <div className="relative w-full h-40 rounded-xl overflow-hidden border border-accent/10 shrink-0">
+                    <img
+                      src={era.imageUrl}
+                      alt={era.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover filter brightness-90 group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-dark/70 to-transparent" />
                   </div>
-                  <div className="flex flex-col gap-0.5">
-                    <span className="font-outfit text-[10px] text-warm-ivory/40 tracking-wider font-semibold uppercase">{era.period}</span>
-                    <h3 className="font-playfair text-xl font-bold text-warm-ivory group-hover:text-accent transition-colors">
-                      {era.name}
-                    </h3>
+
+                  <div className="flex justify-between items-center w-full">
+                    <div className="flex flex-col gap-0.5">
+                      <span className="font-outfit text-[10px] text-warm-ivory/40 tracking-wider font-semibold uppercase">{era.period}</span>
+                      <h3 className="font-playfair text-xl font-bold text-warm-ivory group-hover:text-accent transition-colors">
+                        {era.name}
+                      </h3>
+                    </div>
+                    <div className={`p-2.5 rounded-xl ${era.accentBg} ${era.accentText} border border-accent/5`}>
+                      <IconComponent className="w-5 h-5" />
+                    </div>
                   </div>
                   <p className="font-outfit text-xs leading-relaxed text-warm-ivory/60">
                     {era.description}
